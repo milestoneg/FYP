@@ -47,7 +47,7 @@ public class JohnsonsRule {
 		}
 		
 		System.out.println(J12.size());
-		System.out.println(J21.size());
+		System.out.println(J21.size());//adfadsfasdfasdfsdf
 	}
 
 	public ArrayList<Job> ExtractData() throws IOException {
