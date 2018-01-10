@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.regex.Pattern;
 
 import com.google.gson.Gson;
@@ -15,19 +15,19 @@ public class JohnsonsRule {
 
 	public void Execute() throws IOException {
 
-		ArrayList<Job> JobList = ExtractData();
+		LinkedList<Job> JobList = ExtractData();
 		// ------------- Category Lists------------//
-		ArrayList<Job> J12 = new ArrayList<>();
-		ArrayList<Job> J21 = new ArrayList<>();
-		ArrayList<Job> J1 = new ArrayList<>();
-		ArrayList<Job> J2 = new ArrayList<>();
+		LinkedList<Job> J12 = new LinkedList<>();
+		LinkedList<Job> J21 = new LinkedList<>();
+		LinkedList<Job> J1 = new LinkedList<>();
+		LinkedList<Job> J2 = new LinkedList<>();
 		// ----------------------------------------//
-		
-		//debug
+
+		// debug
 		for (int index = 0; index < JobList.size(); index++) {
 			System.out.println("id: " + JobList.get(index).getId() + " workload:"
-					+ JobList.get(index).getWorkLoadList().get(0).getMachineNo() + "||"
-					+ JobList.get(index).getWorkLoadList().get(1).getMachineNo());
+					+ JobList.get(index).getWorkLoadList().get(0).getProcessingTime() + "||"
+					+ JobList.get(index).getWorkLoadList().get(1).getProcessingTime());
 
 		}
 
@@ -45,19 +45,23 @@ public class JohnsonsRule {
 				J2.add(job);
 			}
 		}
-		
-		System.out.println(J12.size());
-		System.out.println(J21.size());//adfadsfasdfasdfsdf
+	
+		Job[] ordered_J12 = JohnsonAlogrithm(J12);
+
+		// debug
+				for (int index = 0; index < ordered_J12.length; index++) {
+					System.out.println("id: " + ordered_J12[index].getId());
+
+				}
 	}
 
-	public ArrayList<Job> ExtractData() throws IOException {
+	public LinkedList<Job> ExtractData() throws IOException {
 
 		File file = new File(path);
 		Reader reader = new InputStreamReader(new FileInputStream(file));
-		ArrayList<Job> JobList = new ArrayList<Job>();
+		LinkedList<Job> JobList = new LinkedList<Job>();
 		StringBuffer sBuffer = new StringBuffer();
 
-	
 		Gson gson = new Gson();
 		int tempchar;
 		while ((tempchar = reader.read()) != -1) {
@@ -82,4 +86,72 @@ public class JohnsonsRule {
 		return JobList;
 	}
 
+	public Job[] JohnsonAlogrithm(LinkedList<Job> J) {
+		LinkedList<Job> Job_temp = new LinkedList<>(J);
+		
+		for(Job job: Job_temp) {
+			System.out.println("id"+job.getId()+"workload:"+job.getWorkLoadList().get(0).getProcessingTime()+"||"+job.getWorkLoadList().get(1).getProcessingTime());
+		}
+		
+		
+		
+		Job[] ordered_Jobs = new Job[Job_temp.size()];
+		int LeftPointer = 0;
+		int RigthPointer = Job_temp.size() - 1;
+		while (LeftPointer <= RigthPointer) {
+			int MinWorkload = Job_temp.get(0).getWorkLoadList().get(0).getProcessingTime();
+			int Min_Job_index = 0;
+			int Min_workload_index = 0;
+
+			// go through all workloads and find the smallest one. record the job index and
+			// the min workload.
+			for (int Job_index = 0; Job_index < Job_temp.size(); Job_index++) {
+				for (int WorkLoad_index = 0; WorkLoad_index < Job_temp.get(Job_index).getWorkLoadList()
+						.size(); WorkLoad_index++) {
+					if (Job_temp.get(Job_index).getWorkLoadList().get(WorkLoad_index)
+							.getProcessingTime() < MinWorkload) {
+						MinWorkload = Job_temp.get(Job_index).getWorkLoadList().get(WorkLoad_index).getProcessingTime();
+						Min_Job_index = Job_index;
+						Min_workload_index = WorkLoad_index;
+					}
+				}
+
+			}
+		
+			System.out.println("workload:"+MinWorkload);
+			System.out.println("jobindex:"+Min_Job_index);
+			System.out.println("Workloadindex:"+Min_workload_index);
+			System.out.println("-------------------------");
+			
+			if (Job_temp.get(Min_Job_index).getWorkLoadList().get(Min_workload_index).getMachineNo() == 1) {
+				for(Job job : Job_temp) {
+					System.out.println("before:"+job.getId());
+				}
+				System.out.println("Min job index:::" + Min_Job_index);
+			
+				ordered_Jobs[LeftPointer] = Job_temp.remove(Min_Job_index);
+				for(Job job : Job_temp) {
+					System.out.println("after:"+job.getId());
+				}
+				LeftPointer++;
+				
+			} else {
+				
+				ordered_Jobs[RigthPointer] = Job_temp.remove(Min_Job_index);
+				RigthPointer--;
+				
+			}
+			try {
+			MinWorkload = Job_temp.get(0).getWorkLoadList().get(0).getProcessingTime();
+			 Min_Job_index = 0;
+			 Min_workload_index = 0;
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
+		return ordered_Jobs;
+	}
+
+	
 }
