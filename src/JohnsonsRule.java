@@ -45,14 +45,45 @@ public class JohnsonsRule {
 				J2.add(job);
 			}
 		}
-	
+
 		Job[] ordered_J12 = JohnsonAlogrithm(J12);
-
-		// debug
-				for (int index = 0; index < ordered_J12.length; index++) {
-					System.out.println("id: " + ordered_J12[index].getId());
-
-				}
+		Job[] ordered_J21 = JohnsonAlogrithm(J21);
+		Job[] ordered_J1 = JohnsonAlogrithm(J1);
+		Job[] ordered_J2 = JohnsonAlogrithm(J2);
+		
+		LinkedList<Job> Machine_1_JobList = new LinkedList<>();
+		LinkedList<Job> Machine_2_JobList = new LinkedList<>();
+		
+		//combine J12 J1 J21 to Machine_1_JobList
+		for(Job job : ordered_J12) {
+			Machine_1_JobList.add(job);
+		}
+		for(Job job : ordered_J1) {
+			Machine_1_JobList.add(job);
+		}
+		for(Job job : ordered_J21) {
+			Machine_1_JobList.add(job);
+		}
+		
+		for(Job job : Machine_1_JobList) {
+			System.out.println("id"+job.getId());
+		}
+		
+		//conbine J21 J2 J12 to Machine_2_JobList
+		for(Job job : ordered_J21) {
+			Machine_2_JobList.add(job);
+		}
+		for(Job job : ordered_J2) {
+			Machine_2_JobList.add(job);
+		}
+		for(Job job : ordered_J12) {
+			Machine_2_JobList.add(job);
+		}
+		
+		System.out.println("------------------------------------");
+		for(Job job : Machine_2_JobList) {
+			System.out.println("id" + job.getId());
+		}
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
@@ -88,13 +119,12 @@ public class JohnsonsRule {
 
 	public Job[] JohnsonAlogrithm(LinkedList<Job> J) {
 		LinkedList<Job> Job_temp = new LinkedList<>(J);
-		
-		for(Job job: Job_temp) {
-			System.out.println("id"+job.getId()+"workload:"+job.getWorkLoadList().get(0).getProcessingTime()+"||"+job.getWorkLoadList().get(1).getProcessingTime());
+
+		for (Job job : Job_temp) {
+			System.out.println("id" + job.getId() + "workload:" + job.getWorkLoadList().get(0).getProcessingTime()
+					+ "||" + job.getWorkLoadList().get(1).getProcessingTime());
 		}
-		
-		
-		
+
 		Job[] ordered_Jobs = new Job[Job_temp.size()];
 		int LeftPointer = 0;
 		int RigthPointer = Job_temp.size() - 1;
@@ -117,41 +147,40 @@ public class JohnsonsRule {
 				}
 
 			}
-		
-			System.out.println("workload:"+MinWorkload);
-			System.out.println("jobindex:"+Min_Job_index);
-			System.out.println("Workloadindex:"+Min_workload_index);
+
+			System.out.println("workload:" + MinWorkload);
+			System.out.println("jobindex:" + Min_Job_index);
+			System.out.println("Workloadindex:" + Min_workload_index);
 			System.out.println("-------------------------");
-			
+
 			if (Job_temp.get(Min_Job_index).getWorkLoadList().get(Min_workload_index).getMachineNo() == 1) {
-				for(Job job : Job_temp) {
-					System.out.println("before:"+job.getId());
+				for (Job job : Job_temp) {
+					System.out.println("before:" + job.getId());
 				}
 				System.out.println("Min job index:::" + Min_Job_index);
-			
+
 				ordered_Jobs[LeftPointer] = Job_temp.remove(Min_Job_index);
-				for(Job job : Job_temp) {
-					System.out.println("after:"+job.getId());
+				for (Job job : Job_temp) {
+					System.out.println("after:" + job.getId());
 				}
 				LeftPointer++;
-				
+
 			} else {
-				
+
 				ordered_Jobs[RigthPointer] = Job_temp.remove(Min_Job_index);
 				RigthPointer--;
-				
+
 			}
 			try {
-			MinWorkload = Job_temp.get(0).getWorkLoadList().get(0).getProcessingTime();
-			 Min_Job_index = 0;
-			 Min_workload_index = 0;
-			}catch (Exception e) {
+				MinWorkload = Job_temp.get(0).getWorkLoadList().get(0).getProcessingTime();
+				Min_Job_index = 0;
+				Min_workload_index = 0;
+			} catch (Exception e) {
 				// TODO: handle exception
 			}
 		}
-		
+
 		return ordered_Jobs;
 	}
 
-	
 }
