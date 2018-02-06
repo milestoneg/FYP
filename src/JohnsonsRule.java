@@ -81,7 +81,7 @@ public class JohnsonsRule {
 		}
 		
 		System.out.println("------------------------------------");
-		for(Job job : Machine_2_JobList) {
+		for(Job job : Machine_1_JobList) {
 			System.out.println("id" + job.getId());
 		}
 	}
