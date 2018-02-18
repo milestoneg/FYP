@@ -24,12 +24,12 @@ public class JohnsonsRule {
 		// ----------------------------------------//
 
 		// debug
-		for (int index = 0; index < JobList.size(); index++) {
-			System.out.println("id: " + JobList.get(index).getId() + " workload:"
-					+ JobList.get(index).getWorkLoadList().get(0).getProcessingTime() + "||"
-					+ JobList.get(index).getWorkLoadList().get(1).getProcessingTime());
-
-		}
+//		for (int index = 0; index < JobList.size(); index++) {
+//			System.out.println("id: " + JobList.get(index).getId() + " workload:"
+//					+ JobList.get(index).getWorkLoadList().get(0).getProcessingTime() + "||"
+//					+ JobList.get(index).getWorkLoadList().get(1).getProcessingTime());
+//
+//		}
 
 		// classify jobs
 		for (Job job : JobList) {
@@ -65,9 +65,7 @@ public class JohnsonsRule {
 			Machine_1_JobList.add(job);
 		}
 		
-		for(Job job : Machine_1_JobList) {
-			System.out.println("id"+job.getId());
-		}
+		
 		
 		//conbine J21 J2 J12 to Machine_2_JobList
 		for(Job job : ordered_J21) {
@@ -80,9 +78,13 @@ public class JohnsonsRule {
 			Machine_2_JobList.add(job);
 		}
 		
+		//print out the result
+		for(Job job : Machine_1_JobList) {
+			System.out.println("id"+job.getId());
+		}
 		System.out.println("------------------------------------");
 		//sorted job list content
-		for(Job job : Machine_1_JobList) {
+		for(Job job : Machine_2_JobList) {
 			System.out.println("id" + job.getId());
 		}
 	}
@@ -121,10 +123,10 @@ public class JohnsonsRule {
 	public Job[] JohnsonAlogrithm(LinkedList<Job> J) {
 		LinkedList<Job> Job_temp = new LinkedList<>(J);
 
-		for (Job job : Job_temp) {
-			System.out.println("id" + job.getId() + "workload:" + job.getWorkLoadList().get(0).getProcessingTime()
-					+ "||" + job.getWorkLoadList().get(1).getProcessingTime());
-		}
+//		for (Job job : Job_temp) {
+//			System.out.println("id" + job.getId() + "workload:" + job.getWorkLoadList().get(0).getProcessingTime()
+//					+ "||" + job.getWorkLoadList().get(1).getProcessingTime());
+//		}
 
 		Job[] ordered_Jobs = new Job[Job_temp.size()];
 		int LeftPointer = 0;

@@ -26,12 +26,12 @@ public class DVS {
 		// ----------------------------------------//
 
 		// debug
-		for (int index = 0; index < JobList.size(); index++) {
-			System.out.println("id: " + JobList.get(index).getId() + " workload:"
-					+ JobList.get(index).getWorkLoadList().get(0).getProcessingTime() + "||"
-					+ JobList.get(index).getWorkLoadList().get(1).getProcessingTime());
-
-		}
+//		for (int index = 0; index < JobList.size(); index++) {
+//			System.out.println("id: " + JobList.get(index).getId() + " workload:"
+//					+ JobList.get(index).getWorkLoadList().get(0).getProcessingTime() + "||"
+//					+ JobList.get(index).getWorkLoadList().get(1).getProcessingTime());
+//
+//		}
 
 		// classify jobs
 		for (Job job : JobList) {
@@ -50,8 +50,8 @@ public class DVS {
 
 		Queue<Job> ordered_J12 = DVS(J12);
 		Queue<Job> ordered_J21 = DVS(J21);
-		Queue<Job> ordered_J1 = DVS(J1);
-		Queue<Job> ordered_J2 = DVS(J2);
+		//Queue<Job> ordered_J1 = DVS(J1);
+		//Queue<Job> ordered_J2 = DVS(J2);
 		
 		System.out.println("---------------------------");
 		while(!ordered_J12.isEmpty()) {
