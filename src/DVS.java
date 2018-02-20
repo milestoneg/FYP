@@ -53,10 +53,10 @@ public class DVS {
 		//Queue<Job> ordered_J1 = DVS(J1);
 		//Queue<Job> ordered_J2 = DVS(J2);
 		
-		System.out.println("---------------------------");
-		while(!ordered_J12.isEmpty()) {
-			System.out.println("id"+ordered_J12.poll().getId());
-		}
+//		System.out.println("---------------------------");
+//		while(!ordered_J12.isEmpty()) {
+//			System.out.println("id"+ordered_J12.poll().getId());
+//		}
 		
 	}
 	
