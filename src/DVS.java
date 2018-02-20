@@ -14,7 +14,19 @@ import com.google.gson.Gson;
 public class DVS {
 
 	String path = "/Users/gaoyuan/文档/Eclipse workspace/FYP/Jobs.txt";// indicate file path
+	LinkedList<Job> machine_1_JobList = new LinkedList<>();
+	LinkedList<Job> machine_2_JobList = new LinkedList<>();
 	
+	
+
+	public LinkedList<Job> getMachine_1_JobList() {
+		return machine_1_JobList;
+	}
+
+	public LinkedList<Job> getMachine_2_JobList() {
+		return machine_2_JobList;
+	}
+
 	public void Execute() throws IOException {
 
 		LinkedList<Job> JobList = ExtractData();
@@ -50,6 +62,39 @@ public class DVS {
 
 		Queue<Job> ordered_J12 = DVS(J12);
 		Queue<Job> ordered_J21 = DVS(J21);
+		 LinkedList<Job> ordered_J12_List = new LinkedList<Job>();
+		 LinkedList<Job> ordered_J21_List = new LinkedList<Job>();
+		
+		while(!ordered_J12.isEmpty()) {
+			ordered_J12_List.add(ordered_J12.poll());
+		}
+		while(!ordered_J21.isEmpty()) {
+			ordered_J21_List.add(ordered_J21.poll());
+		}
+		
+		
+		
+		// combine J12 J1 J21 to Machine_1_JobList
+				for (Job job : ordered_J12_List) {
+					machine_1_JobList.add(job);
+				}
+				for (Job job : J1) {
+					machine_1_JobList.add(job);
+				}
+				for (Job job : ordered_J21_List) {
+					machine_1_JobList.add(job);
+				}
+
+				// conbine J21 J2 J12 to Machine_2_JobList
+				for (Job job : ordered_J21_List) {
+					machine_2_JobList.add(job);
+				}
+				for (Job job : J2) {
+					machine_2_JobList.add(job);
+				}
+				for (Job job : ordered_J12_List) {
+					machine_2_JobList.add(job);
+				}
 		//Queue<Job> ordered_J1 = DVS(J1);
 		//Queue<Job> ordered_J2 = DVS(J2);
 		
@@ -91,7 +136,7 @@ public class DVS {
 		return JobList;
 	}
 	
-	public Queue DVS(LinkedList<Job> J) {
+	public Queue<Job> DVS(LinkedList<Job> J) {
 		
 		
 		Queue<Job> JobQueue = new PriorityQueue<>(DVSComparator);
