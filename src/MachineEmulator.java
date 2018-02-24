@@ -7,6 +7,7 @@ public class MachineEmulator extends Thread {
 	long processing_time;
 	double total_workload = 0;
 	double EnergyConsumption;
+	LinkedList<Double> EachJob_EnergyConsumption = new LinkedList<>();
 
 	public MachineEmulator(int MachineNo, List<Job> JobList) {
 		this.JobList = (LinkedList<Job>) JobList;
@@ -22,6 +23,7 @@ public class MachineEmulator extends Thread {
 					Thread.sleep(job.getWorkLoadList().get(0).getProcessingTime());
 					total_workload += job.getWorkLoadList().get(0).getProcessingTime();
 					Machines.getMachine_processed(MachineNo).add(job);
+					
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
