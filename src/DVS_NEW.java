@@ -3,7 +3,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -59,8 +58,8 @@ public class DVS_NEW {
 
 		long starttime = System.currentTimeMillis();
 		double J12_EnergyConsumption = DVS(J12);
-		//double J21_EnergyConsumption = DVS(J21);
-		System.out.println(J12_EnergyConsumption+"sssss");
+		double J21_EnergyConsumption = DVS(J21);
+		System.out.println(J12_EnergyConsumption);
 		long endtime = System.currentTimeMillis();
 		System.out.print(endtime-starttime+" ms");
 	}
@@ -136,25 +135,5 @@ public class DVS_NEW {
 		}
 		return Min_EnergyConsumption;
 	}
-
-	public static Comparator<Job> DVSComparator = new Comparator<Job>() {
-
-		@Override
-		public int compare(Job o1, Job o2) {
-			int W11 = o1.getWorkLoadList().get(0).getProcessingTime();
-			int W12 = o1.getWorkLoadList().get(1).getProcessingTime();
-			int W21 = o2.getWorkLoadList().get(0).getProcessingTime();
-			int W22 = o2.getWorkLoadList().get(1).getProcessingTime();
-			double W1FirstEnergyCons = W11 + Math.sqrt(Math.pow(W12, 2) + Math.pow(W21, 2)) + W22;
-			double W2FirstEnergyCons = W12 + Math.sqrt(Math.pow(W11, 2) + Math.pow(W22, 2)) + W21;
-
-			if (W1FirstEnergyCons > W2FirstEnergyCons) {
-				return 1;
-			} else if (W1FirstEnergyCons < W2FirstEnergyCons) {
-				return -1;
-			}
-			return 0;
-		}
-
-	};
+ 
 }
