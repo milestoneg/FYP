@@ -12,8 +12,13 @@ import com.google.gson.Gson;
 public class DVS_NEW {
 
 	String path = "/Users/gaoyuan/文档/Eclipse workspace/FYP/Jobs.txt";// indicate file path
+	int deadline = 0;
 	LinkedList<Job> machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> machine_2_JobList = new LinkedList<>();
+	
+	public DVS_NEW(int ddl) {
+		deadline = ddl;
+	}
 
 	public LinkedList<Job> getMachine_1_JobList() {
 		return machine_1_JobList;
@@ -55,13 +60,14 @@ public class DVS_NEW {
 				J2.add(job);
 			}
 		}
-
+		
+		//control code
 		long starttime = System.currentTimeMillis();
-		double J12_EnergyConsumption = DVS(J12);
-		double J21_EnergyConsumption = DVS(J21);
+		double J12_EnergyConsumption =DVS(J12);
+		//double J21_EnergyConsumption = DVS(J21)/deadline;
 		System.out.println(J12_EnergyConsumption);
 		long endtime = System.currentTimeMillis();
-		System.out.print(endtime-starttime+" ms");
+		System.out.print("Execute time: "+ (endtime-starttime) + " ms");
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
@@ -98,6 +104,7 @@ public class DVS_NEW {
 	public double DVS(List<Job> J) {
 		//LinkedList<Job> JobQueue = new LinkedList<>();
 		double Min_EnergyConsumption = Double.POSITIVE_INFINITY;
+		double result = 0 ;
 		if (J.isEmpty()||J.size()==1) {
 			return 0;
 		}
@@ -133,7 +140,8 @@ public class DVS_NEW {
 				}
 			}
 		}
-		return Min_EnergyConsumption;
+		result = Math.pow(J.get(0).getWorkLoadList().get(0).getProcessingTime()+Min_EnergyConsumption+J.get(J.size()-1).getWorkLoadList().get(1).getProcessingTime(), 2)/deadline;
+		return result;
 	}
  
 }
