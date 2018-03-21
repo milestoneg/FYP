@@ -82,7 +82,7 @@ public class JohnsonsRule {
 
 		// print energy consumption
 		double Energy = EnergyConsumption();
-		System.out.println(Energy);
+		System.out.println("Johnsons Energy Consumption:"+Energy);
 
 		// print out the result
 		// for(Job job : Machine_1_JobList) {
@@ -210,25 +210,25 @@ public class JohnsonsRule {
 		int totalWork_M2 = 0;
 		double EnergyCons = 0;
 		try {
-		for(Job job : J12) {
-			workload_J12_J1 += job.getWorkLoadList().get(0).getProcessingTime();
-			workload_J12_M2 += job.getWorkLoadList().get(1).getProcessingTime();
-			totalWork_M2 += job.getWorkLoadList().get(1).getProcessingTime();
-		}
-		for(Job job : J1) {
-			workload_J12_J1 += job.getWorkLoadList().get(0).getProcessingTime();
-		}
-		for(Job job : J21) {
-			workload_J21_J2 += job.getWorkLoadList().get(0).getProcessingTime();
-			workload_J21_M1 += job.getWorkLoadList().get(1).getProcessingTime();
-			totalWork_M1 += job.getWorkLoadList().get(1).getProcessingTime();
-		}
-		for(Job job : J2) {
-			workload_J21_J2 += job.getWorkLoadList().get(0).getProcessingTime();
-		}
-		totalWork_M1 = totalWork_M1 + workload_J12_J1;
-		totalWork_M2 = totalWork_M2 + workload_J21_J2;
-		}catch (Exception e) {
+			for (Job job : J12) {
+				workload_J12_J1 += job.getWorkLoadList().get(0).getProcessingTime();
+				workload_J12_M2 += job.getWorkLoadList().get(1).getProcessingTime();
+				totalWork_M2 += job.getWorkLoadList().get(1).getProcessingTime();
+			}
+			for (Job job : J1) {
+				workload_J12_J1 += job.getWorkLoadList().get(0).getProcessingTime();
+			}
+			for (Job job : J21) {
+				workload_J21_J2 += job.getWorkLoadList().get(0).getProcessingTime();
+				workload_J21_M1 += job.getWorkLoadList().get(1).getProcessingTime();
+				totalWork_M1 += job.getWorkLoadList().get(1).getProcessingTime();
+			}
+			for (Job job : J2) {
+				workload_J21_J2 += job.getWorkLoadList().get(0).getProcessingTime();
+			}
+			totalWork_M1 = totalWork_M1 + workload_J12_J1;
+			totalWork_M2 = totalWork_M2 + workload_J21_J2;
+		} catch (Exception e) {
 			// TODO: handle exception
 		}
 		System.out.println("-----------------");
@@ -237,31 +237,43 @@ public class JohnsonsRule {
 		System.out.println(totalWork_M1);
 		System.out.println(totalWork_M2);
 		System.out.println("-----------------");
-		if(workload_J12_J1>workload_J21_J2&&workload_J21_J2==0) {
-		double workload_ratio = workload_J12_J1*1.0/(workload_J12_J1+workload_J12_M2);
-		double M1_cost = Math.pow(workload_J12_J1/(deadline*workload_ratio), 2)*(deadline*workload_ratio);
-		double M2_cost = Math.pow(workload_J12_M2/deadline-(deadline*workload_ratio), 2)*(deadline-(deadline*workload_ratio));
-		EnergyCons = M1_cost + M2_cost;
-		}else if(workload_J12_J1<workload_J21_J2&&workload_J12_J1==0) {
-		double workload_ratio = workload_J21_J2*1.0/(workload_J21_J2+workload_J21_M1);
-		double M1_cost = Math.pow(workload_J21_J2/(deadline*workload_ratio), 2)*(deadline*workload_ratio);
-		double M2_cost = Math.pow(workload_J21_M1/deadline-(deadline*workload_ratio), 2)*(deadline-(deadline*workload_ratio));
-		EnergyCons = M1_cost + M2_cost;
-		}else if(workload_J12_J1>workload_J21_J2&&workload_J21_J2!=0) {
-		double workload_ratio = workload_J21_J2*1.0/(workload_J21_M1+(workload_J12_J1-workload_J21_J2)+workload_J21_M1);
-		double M1_cost = Math.pow(totalWork_M1/deadline , 2)*deadline;
-		double M2_cost =  Math.pow(workload_J21_J2/(deadline*workload_ratio),2)*(deadline*workload_ratio)+Math.pow(workload_J12_M2/(deadline-(deadline*workload_ratio)-(workload_J12_J1-workload_J21_J2)/(totalWork_M1/deadline)), 2)*deadline-(deadline*workload_ratio)-(workload_J12_J1-workload_J21_J2)/(totalWork_M1/deadline);
-		EnergyCons = M1_cost + M2_cost;
-		}else if(workload_J12_J1<workload_J21_J2&&workload_J12_J1!=0) {
-		double workload_ratio = workload_J12_J1*1.0/(workload_J12_M2+(workload_J21_J2-workload_J12_J1)+workload_J12_M2);
-		double M1_cost = Math.pow(workload_J12_J1/(deadline*workload_ratio),2)*(deadline*workload_ratio)+Math.pow(workload_J21_M1/(deadline-(deadline*workload_ratio)-(workload_J21_J2-workload_J12_J1)/(totalWork_M2/deadline)), 2)*deadline-(deadline*workload_ratio)-(workload_J21_J2-workload_J12_J1)/(totalWork_M2/deadline);	
-		double M2_cost = Math.pow(totalWork_M2/deadline , 2)*deadline;
-		System.out.println(M2_cost);
-		EnergyCons = M1_cost + M2_cost;
-		}else {
-		double M1_cost = Math.pow(totalWork_M1/deadline , 2)*deadline;
-		double M2_cost = Math.pow(totalWork_M2/deadline , 2)*deadline;
-		EnergyCons = M1_cost+M2_cost;
+		if (workload_J12_J1 > workload_J21_J2 && workload_J21_J2 == 0) {
+			double workload_ratio = workload_J12_J1 * 1.0 / (workload_J12_J1 + workload_J12_M2);
+			double M1_cost = Math.pow(workload_J12_J1 / (deadline * workload_ratio), 2) * (deadline * workload_ratio);
+			System.out.println(M1_cost);
+			double M2_cost = Math.pow(workload_J12_M2 / (deadline - (deadline * workload_ratio)), 2)
+					* (deadline - (deadline * workload_ratio));
+			System.out.println(M2_cost);
+			EnergyCons = M1_cost + M2_cost;
+		} else if (workload_J12_J1 < workload_J21_J2 && workload_J12_J1 == 0) {
+			double workload_ratio = workload_J21_J2 * 1.0 / (workload_J21_J2 + workload_J21_M1);
+			double M1_cost = Math.pow(workload_J21_J2 / (deadline * workload_ratio), 2) * (deadline * workload_ratio);
+			double M2_cost = Math.pow(workload_J21_M1 / (deadline - (deadline * workload_ratio)), 2)
+					* (deadline - (deadline * workload_ratio));
+			EnergyCons = M1_cost + M2_cost;
+		} else if (workload_J12_J1 > workload_J21_J2 && workload_J21_J2 != 0) {
+			double workload_ratio = workload_J21_J2 * 1.0
+					/ (workload_J21_M1 + (workload_J12_J1 - workload_J21_J2) + workload_J21_M1);
+			double M1_cost = Math.pow(totalWork_M1 / deadline, 2) * deadline;
+			double M2_cost = Math.pow(workload_J21_J2 / (deadline * workload_ratio), 2) * (deadline * workload_ratio)
+					+ Math.pow(workload_J12_M2 / (deadline - (deadline * workload_ratio)
+							- (workload_J12_J1 - workload_J21_J2) / (totalWork_M1 / deadline)), 2) * deadline
+					- (deadline * workload_ratio) - (workload_J12_J1 - workload_J21_J2) / (totalWork_M1 / deadline);
+			EnergyCons = M1_cost + M2_cost;
+		} else if (workload_J12_J1 < workload_J21_J2 && workload_J12_J1 != 0) {
+			double workload_ratio = workload_J12_J1 * 1.0
+					/ (workload_J12_M2 + (workload_J21_J2 - workload_J12_J1) + workload_J12_M2);
+			double M1_cost = Math.pow(workload_J12_J1 / (deadline * workload_ratio), 2) * (deadline * workload_ratio)
+					+ Math.pow(workload_J21_M1 / (deadline - (deadline * workload_ratio)
+							- (workload_J21_J2 - workload_J12_J1) / (totalWork_M2 / deadline)), 2) * deadline
+					- (deadline * workload_ratio) - (workload_J21_J2 - workload_J12_J1) / (totalWork_M2 / deadline);
+			double M2_cost = Math.pow(totalWork_M2 / deadline, 2) * deadline;
+			System.out.println(M2_cost);
+			EnergyCons = M1_cost + M2_cost;
+		} else {
+			double M1_cost = Math.pow(totalWork_M1 / deadline, 2) * deadline;
+			double M2_cost = Math.pow(totalWork_M2 / deadline, 2) * deadline;
+			EnergyCons = M1_cost + M2_cost;
 		}
 		return EnergyCons;
 	}

@@ -65,7 +65,7 @@ public class DVS_NEW {
 		long starttime = System.currentTimeMillis();
 		double J12_EnergyConsumption =DVS(J12);
 		//double J21_EnergyConsumption = DVS(J21)/deadline;
-		System.out.println(J12_EnergyConsumption);
+		System.out.println("DVS Energy Consumption:"+J12_EnergyConsumption);
 		long endtime = System.currentTimeMillis();
 		System.out.print("Execute time: "+ (endtime-starttime) + " ms");
 	}
