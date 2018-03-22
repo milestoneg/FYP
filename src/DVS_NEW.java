@@ -15,7 +15,7 @@ public class DVS_NEW {
 	int deadline = 0;
 	LinkedList<Job> machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> machine_2_JobList = new LinkedList<>();
-	
+
 	public DVS_NEW(int ddl) {
 		deadline = ddl;
 	}
@@ -29,7 +29,7 @@ public class DVS_NEW {
 	}
 
 	public void Execute() throws IOException {
-		
+
 		LinkedList<Job> JobList = ExtractData();
 		// ------------- Category Lists------------//
 		LinkedList<Job> J12 = new LinkedList<>();
@@ -60,14 +60,15 @@ public class DVS_NEW {
 				J2.add(job);
 			}
 		}
-		
-		//control code
+
+		// control code
 		long starttime = System.currentTimeMillis();
-		double J12_EnergyConsumption =DVS(J12);
-		//double J21_EnergyConsumption = DVS(J21)/deadline;
-		System.out.println("DVS Energy Consumption:"+J12_EnergyConsumption);
+		double J12_EnergyConsumption_origin = DVS(J12);
+		// double J21_EnergyConsumption = DVS(J21)/deadline;
+		double final_result = Math.pow(J12.get(0).getWorkLoadList().get(0).getProcessingTime()+J12_EnergyConsumption_origin+J12.get(J12.size()-1).getWorkLoadList().get(1).getProcessingTime(), 2)/deadline;
+		System.out.println("DVS Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
-		System.out.print("Execute time: "+ (endtime-starttime) + " ms");
+		System.out.print("Execute time: " + (endtime - starttime) + " ms");
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
@@ -101,47 +102,62 @@ public class DVS_NEW {
 		return JobList;
 	}
 
+	
 	public double DVS(List<Job> J) {
-		//LinkedList<Job> JobQueue = new LinkedList<>();
+		// LinkedList<Job> JobQueue = new LinkedList<>();
 		double Min_EnergyConsumption = Double.POSITIVE_INFINITY;
-		double result = 0 ;
-		if (J.isEmpty()||J.size()==1) {
-			return 0;
+		
+		
+		
+		if (J.isEmpty() || J.size() == 1) {
+			return 0; // may has problem
 		}
 		for (int index = 1; index < J.size(); index++) {
+			boolean flag = true;
 			for (int k = 1; k <= index; k++) {
-				double Sum_Machine_1_toK = 0;
-				double Sum_Machine_1_toI= 0;
-				double Sum_Machine_2_toK = 0;
-				double Sum_Machine_2_toI = 0;
-				//assign values
-				for(int sumindex = 1;sumindex<=k;sumindex++) {
+				double Sum_Machine_1_toK = 0.0;
+				double Sum_Machine_1_toI = 0.0;
+				double Sum_Machine_2_toK = 0.0;
+				double Sum_Machine_2_toI = 0.0;
+				// assign values
+				for (int sumindex = 1; sumindex <= k; sumindex++) {
 					Sum_Machine_1_toK += J.get(sumindex).getWorkLoadList().get(0).getProcessingTime();
 				}
-				for(int sumindex = 1; sumindex <= index; sumindex++) {
+				for (int sumindex = 1; sumindex <= index; sumindex++) {
 					Sum_Machine_1_toI += J.get(sumindex).getWorkLoadList().get(0).getProcessingTime();
 				}
-				for(int sumindex = 0; sumindex <= k-1; sumindex++) {
+				for (int sumindex = 0; sumindex <= k - 1; sumindex++) {
 					Sum_Machine_2_toK += J.get(sumindex).getWorkLoadList().get(1).getProcessingTime();
 				}
-				for(int sumindex = 0; sumindex <= index-1; sumindex++) {
+				for (int sumindex = 0; sumindex <= index - 1; sumindex++) {
 					Sum_Machine_2_toI += J.get(sumindex).getWorkLoadList().get(1).getProcessingTime();
 				}
-				if((Sum_Machine_1_toK/Sum_Machine_1_toI)>=(Sum_Machine_2_toK/Sum_Machine_2_toI)) {
-					double Sum_Machine_1_toK_Mines1 = 0;
-					List<Job> subList = J.subList(index,J.size());
-					for(int sumindex = 0; sumindex<=k-1;sumindex++) {
-						Sum_Machine_1_toK_Mines1 += J.get(sumindex).getWorkLoadList().get(0).getProcessingTime();
-					}
-					double newMin = DVS(subList)+Math.sqrt(Math.pow(Sum_Machine_1_toK_Mines1, 2)+Math.pow(Sum_Machine_2_toI, 2));
-					if(Min_EnergyConsumption>newMin) {
-						 Min_EnergyConsumption = newMin;
-					}
+				if ((Sum_Machine_1_toK / Sum_Machine_1_toI) < (Sum_Machine_2_toK / Sum_Machine_2_toI)) {
+					flag = false;
 				}
 			}
+			if (flag == true) {
+				double Sum_Machine_1_toK_Mines1 = 0.0;
+				double Sum_Machine_2_toI = 0.0;
+				for(int k = 1; k<=index; k++) {
+					for (int sumindex = 0; sumindex <= k - 1; sumindex++) {
+						Sum_Machine_1_toK_Mines1 += J.get(sumindex).getWorkLoadList().get(0).getProcessingTime();
+					}
+					for (int sumindex = 0; sumindex <= index - 1; sumindex++) {
+						Sum_Machine_2_toI += J.get(sumindex).getWorkLoadList().get(1).getProcessingTime();
+					}
+				}
+				List<Job> subList = J.subList(index, J.size());
+				
+				double newMin = DVS(subList)
+						+ Math.sqrt(Math.pow(Sum_Machine_1_toK_Mines1, 2) + Math.pow(Sum_Machine_2_toI, 2));
+				if (Min_EnergyConsumption > newMin) {
+					Min_EnergyConsumption = newMin;
+				}
+			}
+			
 		}
-		result = Math.pow(J.get(0).getWorkLoadList().get(0).getProcessingTime()+Min_EnergyConsumption+J.get(J.size()-1).getWorkLoadList().get(1).getProcessingTime(), 2)/deadline;
-		return result;
+		return Min_EnergyConsumption;
 	}
- 
+
 }

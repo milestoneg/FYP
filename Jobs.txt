@@ -1,1 +1,0 @@
-{"id":0,"WorkLoadList":[{"MachineNo":1,"ProcessingTime":57},{"MachineNo":2,"ProcessingTime":1}]}{"id":1,"WorkLoadList":[{"MachineNo":1,"ProcessingTime":23},{"MachineNo":2,"ProcessingTime":1000}]}

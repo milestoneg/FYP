@@ -5,9 +5,15 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 	Scanner intkb = new Scanner(System.in);
-	System.out.println("Please input the deadline(ms):");
-	int ddl = intkb.nextInt();
-//	JohnsonsRule JohnsonsRule = new JohnsonsRule();
+	
+	//code used to read keyboard input
+	//System.out.println("Please input the deadline(ms):");
+	//int ddl = intkb.nextInt();
+	
+	//code used to read parameters from command line
+	int ddl = Integer.valueOf(args[0]);
+
+	//	JohnsonsRule JohnsonsRule = new JohnsonsRule();
 //	JohnsonsRule.Execute();
 //	LinkedList<Job> Johnson_machine1_List = JohnsonsRule.getMachine_1_JobList();
 //	LinkedList<Job> Johnson_machine2_List = JohnsonsRule.getMachine_2_JobList();
