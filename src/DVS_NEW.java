@@ -5,19 +5,22 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import com.google.gson.Gson;
 
 public class DVS_NEW {
 
-	String path = "/Users/gaoyuan/文档/Eclipse workspace/FYP/Jobs.txt";// indicate file path
+	String path = "Jobs.txt";// indicate file path
 	int deadline = 0;
+	Logger logger;
 	LinkedList<Job> machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> machine_2_JobList = new LinkedList<>();
 
-	public DVS_NEW(int ddl) {
+	public DVS_NEW(int ddl, Logger logger) {
 		deadline = ddl;
+		this.logger = logger;
 	}
 
 	public LinkedList<Job> getMachine_1_JobList() {
@@ -69,6 +72,7 @@ public class DVS_NEW {
 		System.out.println("DVS Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
 		System.out.print("Execute time: " + (endtime - starttime) + " ms");
+		logger.info("DVS Energy Consumption: " + final_result);
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {

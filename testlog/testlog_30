@@ -1,0 +1,496 @@
+Mar 22, 2018 11:13:18 PM Generator.Main main
+INFO: workload range: 9
+Mar 22, 2018 11:13:18 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:18 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:13:18 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:8352.1
+Mar 22, 2018 11:13:22 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 4731.322689917708
+Mar 22, 2018 11:13:22 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:22 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:22 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:13:22 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:4176.05
+Mar 22, 2018 11:13:26 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2365.661344958854
+Mar 22, 2018 11:13:26 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:26 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:26 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:13:26 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1044.0125
+Mar 22, 2018 11:13:30 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 591.4153362397135
+Mar 22, 2018 11:13:30 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:30 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:30 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:13:30 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:417.605
+Mar 22, 2018 11:13:34 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 236.56613449588542
+Mar 22, 2018 11:13:34 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:34 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:34 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:13:34 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:167.04200000000003
+Mar 22, 2018 11:13:38 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 94.62645379835416
+Mar 22, 2018 11:13:38 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:38 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:38 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:13:38 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:83.52100000000002
+Mar 22, 2018 11:13:42 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 47.31322689917708
+Mar 22, 2018 11:13:42 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:42 PM Generator.Main main
+INFO: workload range: 19
+Mar 22, 2018 11:13:42 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:42 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:13:42 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:36481.6
+Mar 22, 2018 11:13:45 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 21377.35345106582
+Mar 22, 2018 11:13:45 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:45 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:45 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:13:45 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:18240.8
+Mar 22, 2018 11:13:47 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 10688.67672553291
+Mar 22, 2018 11:13:47 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:47 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:47 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:13:47 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:4560.2
+Mar 22, 2018 11:13:50 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2672.1691813832276
+Mar 22, 2018 11:13:50 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:50 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:50 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:13:50 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1824.0800000000002
+Mar 22, 2018 11:13:53 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1068.867672553291
+Mar 22, 2018 11:13:53 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:53 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:53 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:13:53 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:729.632
+Mar 22, 2018 11:13:56 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 427.5470690213164
+Mar 22, 2018 11:13:56 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:56 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:56 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:13:56 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:364.816
+Mar 22, 2018 11:13:58 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 213.7735345106582
+Mar 22, 2018 11:13:58 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:13:59 PM Generator.Main main
+INFO: workload range: 39
+Mar 22, 2018 11:13:59 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:13:59 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:13:59 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:127916.1
+Mar 22, 2018 11:14:02 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 74385.81890959831
+Mar 22, 2018 11:14:02 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:03 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:03 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:14:03 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:63958.05
+Mar 22, 2018 11:14:06 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 37192.909454799155
+Mar 22, 2018 11:14:06 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:06 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:06 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:14:07 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:15989.5125
+Mar 22, 2018 11:14:10 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 9298.227363699789
+Mar 22, 2018 11:14:10 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:10 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:10 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:14:10 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:6395.805
+Mar 22, 2018 11:14:14 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 3719.290945479915
+Mar 22, 2018 11:14:14 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:14 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:14 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:14:14 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:2558.322
+Mar 22, 2018 11:14:17 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1487.716378191966
+Mar 22, 2018 11:14:17 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:17 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:17 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:14:17 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1279.161
+Mar 22, 2018 11:14:21 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 743.858189095983
+Mar 22, 2018 11:14:21 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:21 PM Generator.Main main
+INFO: workload range: 79
+Mar 22, 2018 11:14:21 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:21 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:14:21 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:517562.5
+Mar 22, 2018 11:14:23 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 331876.38017597457
+Mar 22, 2018 11:14:23 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:23 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:23 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:14:23 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:258781.25
+Mar 22, 2018 11:14:25 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 165938.19008798728
+Mar 22, 2018 11:14:25 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:25 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:25 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:14:25 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:64695.3125
+Mar 22, 2018 11:14:27 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 41484.54752199682
+Mar 22, 2018 11:14:27 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:27 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:27 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:14:28 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:25878.125
+Mar 22, 2018 11:14:29 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 16593.81900879873
+Mar 22, 2018 11:14:29 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:30 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:30 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:14:30 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:10351.249999999998
+Mar 22, 2018 11:14:32 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 6637.527603519492
+Mar 22, 2018 11:14:32 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:32 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:32 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:14:32 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:5175.624999999999
+Mar 22, 2018 11:14:34 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 3318.763801759746
+Mar 22, 2018 11:14:34 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:34 PM Generator.Main main
+INFO: workload range: 159
+Mar 22, 2018 11:14:34 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:34 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:14:34 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:2833432.9000000004
+Mar 22, 2018 11:14:35 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1671690.8306650096
+Mar 22, 2018 11:14:35 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:35 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:35 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:14:36 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1416716.4500000002
+Mar 22, 2018 11:14:37 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 835845.4153325048
+Mar 22, 2018 11:14:37 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:37 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:37 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:14:37 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:354179.11250000005
+Mar 22, 2018 11:14:38 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 208961.3538331262
+Mar 22, 2018 11:14:38 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:38 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:38 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:14:38 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:141671.645
+Mar 22, 2018 11:14:40 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 83584.54153325048
+Mar 22, 2018 11:14:40 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:40 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:40 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:14:40 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:56668.657999999996
+Mar 22, 2018 11:14:41 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 33433.81661330019
+Mar 22, 2018 11:14:41 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:41 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:41 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:14:41 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:28334.328999999998
+Mar 22, 2018 11:14:43 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 16716.908306650093
+Mar 22, 2018 11:14:43 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:43 PM Generator.Main main
+INFO: workload range: 319
+Mar 22, 2018 11:14:43 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:43 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:14:43 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:6648771.6
+Mar 22, 2018 11:14:45 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 4171264.7755593807
+Mar 22, 2018 11:14:45 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:45 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:45 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:14:45 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:3324385.8
+Mar 22, 2018 11:14:47 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2085632.3877796903
+Mar 22, 2018 11:14:47 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:47 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:47 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:14:47 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:831096.45
+Mar 22, 2018 11:14:49 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 521408.0969449226
+Mar 22, 2018 11:14:49 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:49 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:49 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:14:49 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:332438.57999999996
+Mar 22, 2018 11:14:51 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 208563.23877796903
+Mar 22, 2018 11:14:51 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:51 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:51 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:14:51 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:132975.43199999997
+Mar 22, 2018 11:14:53 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 83425.2955111876
+Mar 22, 2018 11:14:53 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:53 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:53 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:14:53 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:66487.71599999999
+Mar 22, 2018 11:14:55 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 41712.6477555938
+Mar 22, 2018 11:14:55 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:55 PM Generator.Main main
+INFO: workload range: 639
+Mar 22, 2018 11:14:55 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:55 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:14:55 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:3.65995161E7
+Mar 22, 2018 11:14:57 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2.2627573667479295E7
+Mar 22, 2018 11:14:57 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:57 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:57 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:14:57 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1.829975805E7
+Mar 22, 2018 11:14:59 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1.1313786833739648E7
+Mar 22, 2018 11:14:59 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:14:59 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:14:59 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:14:59 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:4574939.5125
+Mar 22, 2018 11:15:01 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2828446.708434912
+Mar 22, 2018 11:15:01 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:01 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:01 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:15:01 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1829975.8050000002
+Mar 22, 2018 11:15:03 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1131378.6833739646
+Mar 22, 2018 11:15:03 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:03 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:03 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:15:03 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:731990.3219999999
+Mar 22, 2018 11:15:05 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 452551.4733495859
+Mar 22, 2018 11:15:05 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:05 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:05 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:15:05 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:365995.16099999996
+Mar 22, 2018 11:15:07 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 226275.73667479295
+Mar 22, 2018 11:15:07 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:07 PM Generator.Main main
+INFO: workload range: 999
+Mar 22, 2018 11:15:07 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:07 PM Main main
+INFO: Deadline:10
+Mar 22, 2018 11:15:07 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:7.81482025E7
+Mar 22, 2018 11:15:11 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 5.039995910999368E7
+Mar 22, 2018 11:15:11 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:11 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:11 PM Main main
+INFO: Deadline:20
+Mar 22, 2018 11:15:11 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:3.907410125E7
+Mar 22, 2018 11:15:15 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2.519997955499684E7
+Mar 22, 2018 11:15:15 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:15 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:15 PM Main main
+INFO: Deadline:80
+Mar 22, 2018 11:15:15 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:9768525.3125
+Mar 22, 2018 11:15:19 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 6299994.88874921
+Mar 22, 2018 11:15:19 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:19 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:19 PM Main main
+INFO: Deadline:200
+Mar 22, 2018 11:15:19 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:3907410.125
+Mar 22, 2018 11:15:23 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 2519997.955499684
+Mar 22, 2018 11:15:23 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:23 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:23 PM Main main
+INFO: Deadline:500
+Mar 22, 2018 11:15:23 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:1562964.05
+Mar 22, 2018 11:15:26 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 1007999.1821998736
+Mar 22, 2018 11:15:26 PM Main main
+INFO: <---------- program end ---------->
+Mar 22, 2018 11:15:26 PM Main main
+INFO: <-------- program start ---------->
+Mar 22, 2018 11:15:26 PM Main main
+INFO: Deadline:1000
+Mar 22, 2018 11:15:27 PM JohnsonsRule Execute
+INFO: Johonsons Energy Consumption:781482.025
+Mar 22, 2018 11:15:30 PM DVS_NEW Execute
+INFO: DVS Energy Consumption: 503999.5910999368
+Mar 22, 2018 11:15:30 PM Main main
+INFO: <---------- program end ---------->

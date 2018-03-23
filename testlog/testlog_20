@@ -1,0 +1,496 @@
+Mar 22, 2018 5:10:57 PM Generator.Main main
+信息: workload range: 9
+Mar 22, 2018 5:10:57 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:57 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:10:57 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:4326.400000000001
+Mar 22, 2018 5:10:57 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 2573.0566869139443
+Mar 22, 2018 5:10:57 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:57 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:57 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:10:57 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:2163.2000000000003
+Mar 22, 2018 5:10:57 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1286.5283434569722
+Mar 22, 2018 5:10:57 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:10:58 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:540.8000000000001
+Mar 22, 2018 5:10:58 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 321.63208586424304
+Mar 22, 2018 5:10:58 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:10:58 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:216.32
+Mar 22, 2018 5:10:58 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 128.65283434569722
+Mar 22, 2018 5:10:58 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:58 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:10:58 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:86.52799999999999
+Mar 22, 2018 5:10:59 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 51.46113373827888
+Mar 22, 2018 5:10:59 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:59 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:59 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:10:59 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43.263999999999996
+Mar 22, 2018 5:10:59 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 25.73056686913944
+Mar 22, 2018 5:10:59 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:10:59 PM Generator.Main main
+信息: workload range: 19
+Mar 22, 2018 5:10:59 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:10:59 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:10:59 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:13689.999999999996
+Mar 22, 2018 5:11:00 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 8910.782111007396
+Mar 22, 2018 5:11:00 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:00 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:00 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:00 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:6844.999999999998
+Mar 22, 2018 5:11:00 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 4455.391055503698
+Mar 22, 2018 5:11:00 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:00 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:00 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:00 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1711.2499999999995
+Mar 22, 2018 5:11:00 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1113.8477638759246
+Mar 22, 2018 5:11:00 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:01 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:684.5
+Mar 22, 2018 5:11:01 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 445.53910555036987
+Mar 22, 2018 5:11:01 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:01 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:273.80000000000007
+Mar 22, 2018 5:11:01 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 178.21564222014794
+Mar 22, 2018 5:11:01 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:01 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:01 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:136.90000000000003
+Mar 22, 2018 5:11:02 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 89.10782111007397
+Mar 22, 2018 5:11:02 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:02 PM Generator.Main main
+信息: workload range: 39
+Mar 22, 2018 5:11:02 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:02 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:02 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:79388.1
+Mar 22, 2018 5:11:02 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 45863.50557266093
+Mar 22, 2018 5:11:02 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:02 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:02 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:02 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:39694.05
+Mar 22, 2018 5:11:02 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 22931.752786330464
+Mar 22, 2018 5:11:02 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:03 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:9923.5125
+Mar 22, 2018 5:11:03 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 5732.938196582616
+Mar 22, 2018 5:11:03 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:03 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:3969.4050000000007
+Mar 22, 2018 5:11:03 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 2293.175278633046
+Mar 22, 2018 5:11:03 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:03 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:03 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1587.7620000000002
+Mar 22, 2018 5:11:03 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 917.2701114532185
+Mar 22, 2018 5:11:03 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:04 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:04 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:04 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:793.8810000000001
+Mar 22, 2018 5:11:04 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 458.63505572660927
+Mar 22, 2018 5:11:04 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:04 PM Generator.Main main
+信息: workload range: 79
+Mar 22, 2018 5:11:04 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:04 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:04 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:266668.89999999997
+Mar 22, 2018 5:11:04 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 170129.50535197073
+Mar 22, 2018 5:11:04 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:05 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:133334.44999999998
+Mar 22, 2018 5:11:05 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 85064.75267598536
+Mar 22, 2018 5:11:05 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:05 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:33333.612499999996
+Mar 22, 2018 5:11:05 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 21266.18816899634
+Mar 22, 2018 5:11:05 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:05 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:05 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:13333.444999999998
+Mar 22, 2018 5:11:05 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 8506.475267598536
+Mar 22, 2018 5:11:05 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:06 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:06 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:06 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:5333.378
+Mar 22, 2018 5:11:06 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 3402.5901070394148
+Mar 22, 2018 5:11:06 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:06 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:06 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:06 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:2666.689
+Mar 22, 2018 5:11:06 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1701.2950535197074
+Mar 22, 2018 5:11:06 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:06 PM Generator.Main main
+信息: workload range: 159
+Mar 22, 2018 5:11:07 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:07 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:07 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:787363.6000000001
+Mar 22, 2018 5:11:07 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 494447.7933888139
+Mar 22, 2018 5:11:07 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:07 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:07 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:07 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:393681.80000000005
+Mar 22, 2018 5:11:07 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 247223.89669440695
+Mar 22, 2018 5:11:07 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:07 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:07 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:07 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:98420.45000000001
+Mar 22, 2018 5:11:07 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 61805.97417360174
+Mar 22, 2018 5:11:07 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:08 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:39368.17999999999
+Mar 22, 2018 5:11:08 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 24722.389669440698
+Mar 22, 2018 5:11:08 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:08 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:15747.272
+Mar 22, 2018 5:11:08 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 9888.955867776278
+Mar 22, 2018 5:11:08 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:08 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:08 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:7873.636
+Mar 22, 2018 5:11:08 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 4944.477933888139
+Mar 22, 2018 5:11:08 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:09 PM Generator.Main main
+信息: workload range: 319
+Mar 22, 2018 5:11:09 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:09 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:09 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:4357320.1
+Mar 22, 2018 5:11:09 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 2520634.500628402
+Mar 22, 2018 5:11:09 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:09 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:09 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:09 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:2178660.05
+Mar 22, 2018 5:11:09 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1260317.250314201
+Mar 22, 2018 5:11:09 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:544665.0125
+Mar 22, 2018 5:11:10 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 315079.31257855025
+Mar 22, 2018 5:11:10 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:217866.00500000006
+Mar 22, 2018 5:11:10 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 126031.72503142011
+Mar 22, 2018 5:11:10 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:10 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:87146.402
+Mar 22, 2018 5:11:10 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 50412.69001256804
+Mar 22, 2018 5:11:10 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:11 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:11 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:11 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43573.201
+Mar 22, 2018 5:11:11 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 25206.34500628402
+Mar 22, 2018 5:11:11 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:11 PM Generator.Main main
+信息: workload range: 639
+Mar 22, 2018 5:11:11 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:11 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:11 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:2.13218404E7
+Mar 22, 2018 5:11:11 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1.1163313312321158E7
+Mar 22, 2018 5:11:11 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:12 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1.06609202E7
+Mar 22, 2018 5:11:12 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 5581656.656160579
+Mar 22, 2018 5:11:12 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:12 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:2665230.05
+Mar 22, 2018 5:11:12 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1395414.1640401448
+Mar 22, 2018 5:11:12 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:12 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:13 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1066092.02
+Mar 22, 2018 5:11:13 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 558165.6656160579
+Mar 22, 2018 5:11:13 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:13 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:13 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:13 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:426436.80799999996
+Mar 22, 2018 5:11:13 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 223266.26624642315
+Mar 22, 2018 5:11:13 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:13 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:13 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:13 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:213218.40399999998
+Mar 22, 2018 5:11:13 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 111633.13312321158
+Mar 22, 2018 5:11:13 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:14 PM Generator.Main main
+信息: workload range: 999
+Mar 22, 2018 5:11:14 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:14 PM Main main
+信息: Deadline:10
+Mar 22, 2018 5:11:14 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:3.88247616E7
+Mar 22, 2018 5:11:14 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 2.383479296029172E7
+Mar 22, 2018 5:11:14 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:14 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:14 PM Main main
+信息: Deadline:20
+Mar 22, 2018 5:11:14 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1.94123808E7
+Mar 22, 2018 5:11:14 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1.191739648014586E7
+Mar 22, 2018 5:11:14 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: Deadline:80
+Mar 22, 2018 5:11:15 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:4853095.2
+Mar 22, 2018 5:11:15 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 2979349.120036465
+Mar 22, 2018 5:11:15 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: Deadline:200
+Mar 22, 2018 5:11:15 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1941238.08
+Mar 22, 2018 5:11:15 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 1191739.648014586
+Mar 22, 2018 5:11:15 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:15 PM Main main
+信息: Deadline:500
+Mar 22, 2018 5:11:15 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:776495.2320000001
+Mar 22, 2018 5:11:15 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 476695.8592058344
+Mar 22, 2018 5:11:15 PM Main main
+信息: <---------- program end ---------->
+Mar 22, 2018 5:11:16 PM Main main
+信息: <-------- program start ---------->
+Mar 22, 2018 5:11:16 PM Main main
+信息: Deadline:1000
+Mar 22, 2018 5:11:16 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:388247.61600000004
+Mar 22, 2018 5:11:16 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 238347.9296029172
+Mar 22, 2018 5:11:16 PM Main main
+信息: <---------- program end ---------->

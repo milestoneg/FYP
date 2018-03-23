@@ -5,14 +5,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.LinkedList;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import com.google.gson.Gson;
 
 public class JohnsonsRule {
 
-	String path = "/Users/gaoyuan/文档/Eclipse workspace/FYP/Jobs.txt";// indicate file path
+	String path = "Jobs.txt";// indicate file path
 	int deadline = 0;
+	Logger logger;
 	LinkedList<Job> Machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> Machine_2_JobList = new LinkedList<>();
 	// ------------- Category Lists------------//
@@ -22,8 +24,9 @@ public class JohnsonsRule {
 	LinkedList<Job> J2 = new LinkedList<>();
 	// ----------------------------------------//
 
-	public JohnsonsRule(int ddl) {
+	public JohnsonsRule(int ddl, Logger logger) {
 		deadline = ddl;
+		this.logger = logger;
 	}
 
 	public void Execute() throws IOException {
@@ -83,7 +86,7 @@ public class JohnsonsRule {
 		// print energy consumption
 		double Energy = EnergyConsumption();
 		System.out.println("Johnsons Energy Consumption:"+Energy);
-
+		logger.info("Johonsons Energy Consumption:" + Energy);
 		// print out the result
 		// for(Job job : Machine_1_JobList) {
 		// System.out.println("id"+job.getId());

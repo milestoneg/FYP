@@ -10,7 +10,7 @@ import com.google.gson.Gson;
 
 public class JobGenerator {
 
-	String path = "/Users/gaoyuan/文档/Eclipse workspace/FYP/Jobs.txt";
+	String path = "Jobs.txt";
 	File file;
 	FileWriter FileWriter;
 	BufferedWriter BufferedWriter;
@@ -37,9 +37,9 @@ public class JobGenerator {
 		this.OnlyM1 = OnlyM1;
 		this.OnlyM2 = OnlyM2;
 		file = new File(path);
-		if (!file.getParentFile().exists()) {
-			file.getParentFile().mkdirs();
-		}
+//		if (!file.getParentFile().exists()) {
+//			file.getParentFile().mkdirs();
+//		}
 
 		file.createNewFile();
 
