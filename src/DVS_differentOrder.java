@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 import com.google.gson.Gson;
 
-public class DVS_NEW {
+public class DVS_differentOrder {
 
 	String path = "Jobs.txt";// indicate file path
 	int deadline = 0;
@@ -18,7 +18,7 @@ public class DVS_NEW {
 	LinkedList<Job> machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> machine_2_JobList = new LinkedList<>();
 
-	public DVS_NEW(int ddl, Logger logger) {
+	public DVS_differentOrder(int ddl, Logger logger) {
 		deadline = ddl;
 		this.logger = logger;
 	}
@@ -55,25 +55,35 @@ public class DVS_NEW {
 			int secondMachine_load = job.getWorkLoadList().get(1).getProcessingTime();
 			if (firstMachine == 1 && secondMachine_load!=0) {
 				J12.add(job);
+				machine_1_JobList.add(job);
 			} else if (firstMachine == 2 && secondMachine_load != 0) {
 				J21.add(job);
+				machine_2_JobList.add(job);
 			} else if (firstMachine == 1 && secondMachine_load == 0) {
 				J1.add(job);
+				machine_1_JobList.add(job);
 			} else {
 				J2.add(job);
+				machine_2_JobList.add(job);
 			}
 		}
-		
+
 		
 		// control code
-		long starttime = System.currentTimeMillis();
-		double J12_EnergyConsumption_origin = DVS(J12);
-		// double J21_EnergyConsumption = DVS(J21)/deadline;
-		double final_result = Math.pow(J12.get(0).getWorkLoadList().get(0).getProcessingTime()+J12_EnergyConsumption_origin+J12.get(J12.size()-1).getWorkLoadList().get(1).getProcessingTime(), 2)/deadline;
+		long starttime = System.currentTimeMillis();	
+		double DVS_M1 = DVS(machine_1_JobList);
+		double DVS_M2 = DVS(machine_2_JobList);
+		double a = DVS_M1-DVS_M2;
+		double b = 2*deadline*DVS_M2;
+		double c = -DVS_M2*deadline*deadline;
+		double time = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		double time2 = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		double final_result = (Math.pow(machine_1_JobList.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M1+machine_1_JobList.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time))+(Math.pow(machine_2_JobList.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M2+machine_2_JobList.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time);
+		System.out.println("time:" +time +" time2:"+ time2);
 		System.out.println("DVS Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
-		System.out.print("Execute time: " + (endtime - starttime) + " ms");
-		logger.info("DVS Energy Consumption: " + final_result);
+		//System.out.print("Execute time: " + (endtime - starttime) + " ms");
+		//logger.info("DVS Energy Consumption: " + final_result);
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
@@ -114,8 +124,10 @@ public class DVS_NEW {
 		
 		
 		
-		if (J.isEmpty() || J.size() == 1) {
+		if (J.isEmpty() ) {
 			return 0; // may has problem
+		}else if(J.size() == 1) {
+			return Math.sqrt(Math.pow(J.get(0).getWorkLoadList().get(0).getProcessingTime(), 2) + Math.pow(J.get(0).getWorkLoadList().get(1).getProcessingTime(), 2));
 		}
 		for (int index = 1; index < J.size(); index++) {
 			boolean flag = true;

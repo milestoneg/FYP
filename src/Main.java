@@ -18,11 +18,11 @@ public class Main {
 		Scanner intkb = new Scanner(System.in);
 
 		// code used to read keyboard input
-//		System.out.println("Please input the deadline(ms):");
-//		int ddl = intkb.nextInt();
+		System.out.println("Please input the deadline(ms):");
+		int ddl = intkb.nextInt();
 
 		// code used to read parameters from command line
-		 int ddl = Integer.valueOf(args[0]);
+		// int ddl = Integer.valueOf(args[0]);
 
 		// JohnsonsRule JohnsonsRule = new JohnsonsRule();
 		// JohnsonsRule.Execute();
@@ -45,8 +45,15 @@ public class Main {
 		logger.info("Deadline:" + ddl);
 		JohnsonsRule johnsonsRule = new JohnsonsRule(ddl, logger);
 		johnsonsRule.Execute();
-		DVS_NEW DVS = new DVS_NEW(ddl, logger);
-		DVS.Execute();
+//		DVS_NEW DVS = new DVS_NEW(ddl, logger);
+//		DVS.Execute();
+		
+		
+		DVS_differentOrder DVS_differentOrder = new DVS_differentOrder(ddl, logger);
+		DVS_differentOrder.Execute();
+		
+		DVS_Interleaved dvs_Interleaved = new DVS_Interleaved(ddl, logger);
+		dvs_Interleaved.Execute();
 		logger.info("<---------- program end ---------->");
 	}
 

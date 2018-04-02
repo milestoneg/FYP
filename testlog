@@ -1,0 +1,740 @@
+Mar 31, 2018 11:52:33 PM Main main
+信息: <-------- program start ---------->
+Mar 31, 2018 11:52:33 PM Main main
+信息: Deadline:10
+Mar 31, 2018 11:52:33 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:6012057.834388258
+Mar 31, 2018 11:53:24 PM Main main
+信息: <-------- program start ---------->
+Mar 31, 2018 11:53:24 PM Main main
+信息: Deadline:10
+Mar 31, 2018 11:53:24 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:6012057.834388258
+Mar 31, 2018 11:53:24 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 4802.14156623712
+Mar 31, 2018 11:53:24 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 12:27:16 AM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 12:27:16 AM Main main
+信息: Deadline:10
+Apr 01, 2018 12:27:16 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:6012057.834388258
+Apr 01, 2018 12:27:16 AM DVS_NEW Execute
+信息: DVS Energy Consumption: 4802.14156623712
+Apr 01, 2018 12:27:16 AM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 1795.6
+Apr 01, 2018 12:27:16 AM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 12:27:43 AM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 12:27:43 AM Main main
+信息: Deadline:10
+Apr 01, 2018 12:27:43 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:6012057.834388258
+Apr 01, 2018 12:27:43 AM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 1795.6
+Apr 01, 2018 12:27:43 AM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 12:29:12 AM Generator.Main main
+信息: workload range: 10
+Apr 01, 2018 12:29:32 AM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 12:29:32 AM Main main
+信息: Deadline:10
+Apr 01, 2018 12:29:32 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:26419.6
+Apr 01, 2018 12:29:32 AM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 18481.24304817416
+Apr 01, 2018 12:29:32 AM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 4:01:17 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 4:01:17 PM Main main
+信息: Deadline:10
+Apr 01, 2018 4:01:17 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:17150.0
+Apr 01, 2018 4:01:17 PM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 18481.24304817416
+Apr 01, 2018 4:01:17 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 4:02:18 PM Generator.Main main
+信息: workload range: 10
+Apr 01, 2018 4:02:27 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 4:02:27 PM Main main
+信息: Deadline:10
+Apr 01, 2018 4:02:27 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 01, 2018 4:02:27 PM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 14674.52842849492
+Apr 01, 2018 4:02:27 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 4:10:44 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 4:10:44 PM Main main
+信息: Deadline:10
+Apr 01, 2018 4:10:44 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 01, 2018 4:10:45 PM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 14674.52842849492
+Apr 01, 2018 4:10:45 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 4:11:09 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 4:11:09 PM Main main
+信息: Deadline:10
+Apr 01, 2018 4:11:09 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 4:11:09 PM DVS_differentOrder Execute
+信息: DVS Energy Consumption: 14674.52842849492
+Apr 01, 2018 4:11:09 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 5:07:41 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 5:07:41 PM Main main
+信息: Deadline:10
+Apr 01, 2018 5:07:41 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 5:07:41 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 102.4
+Apr 01, 2018 5:07:41 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 9:56:21 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 9:56:21 PM Main main
+信息: Deadline:10
+Apr 01, 2018 9:56:21 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 9:56:21 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 9:56:54 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 9:56:54 PM Main main
+信息: Deadline:10
+Apr 01, 2018 9:56:54 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 9:56:54 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 9:59:03 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 9:59:03 PM Main main
+信息: Deadline:10
+Apr 01, 2018 9:59:03 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 9:59:03 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:00:06 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:00:06 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:00:06 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:00:06 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:00:50 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:00:50 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:00:50 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:00:50 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:02:09 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:02:09 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:02:09 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:02:09 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:12:01 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:12:01 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:12:02 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:12:02 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:12:30 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:12:30 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:12:30 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:12:30 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:12:44 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:12:44 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:12:44 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:12:44 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:13:19 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:13:19 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:13:19 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:13:19 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:13:38 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:13:38 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:13:38 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:13:38 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:14:10 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:14:10 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:14:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:14:10 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:15:23 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:15:23 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:15:23 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:15:23 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:16:33 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:16:33 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:16:33 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:16:33 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:17:27 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:17:27 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:17:27 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:17:27 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:17:41 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:17:42 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:17:42 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:17:42 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:18:37 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:18:37 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:18:37 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:18:37 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:19:56 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:19:56 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:19:56 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:19:56 PM Main main
+信息: <---------- program end ---------->
+Apr 01, 2018 10:20:56 PM Main main
+信息: <-------- program start ---------->
+Apr 01, 2018 10:20:56 PM Main main
+信息: Deadline:10
+Apr 01, 2018 10:20:56 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 01, 2018 10:20:56 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:16:54 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:16:54 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:16:54 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:16:54 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:18:05 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:18:05 AM Main main
+信息: Deadline:30
+Apr 02, 2018 12:18:05 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:19844.0
+Apr 02, 2018 12:18:05 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:22:54 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:22:55 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:22:55 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:22:55 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:23:37 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:23:37 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:23:37 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:23:37 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:23:53 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:23:53 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:23:53 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:23:53 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:26:54 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:26:54 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:26:54 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:26:54 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:27:03 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:27:03 AM Main main
+信息: Deadline:20
+Apr 02, 2018 12:27:03 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:29403.0
+Apr 02, 2018 12:27:03 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:27:20 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:27:20 AM Main main
+信息: Deadline:20
+Apr 02, 2018 12:27:20 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:29403.0
+Apr 02, 2018 12:27:20 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:27:52 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:27:52 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:27:52 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:27:52 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:43:16 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:43:16 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:43:16 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:43:16 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:43:41 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:43:41 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:43:41 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:43:41 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:43:53 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:43:53 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:43:54 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:43:54 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:44:16 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:44:16 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:44:16 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:44:16 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:45:05 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:45:05 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:45:05 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:45:05 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:45:26 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:45:26 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:45:26 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:45:26 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 12:45:39 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 12:45:39 AM Main main
+信息: Deadline:10
+Apr 02, 2018 12:45:39 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 12:45:39 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 11:07:12 AM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:07:12 AM Main main
+信息: Deadline:10
+Apr 02, 2018 11:07:12 AM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:58357.0
+Apr 02, 2018 11:07:12 AM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:33:55 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:33:55 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:33:55 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:33:55 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:34:10 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:34:10 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:34:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:34:10 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:39:30 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:39:30 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:39:30 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:39:30 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:39:51 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:39:51 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:39:51 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:39:51 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:41:08 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:41:08 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:41:08 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:41:08 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 3:41:49 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 3:41:49 PM Main main
+信息: Deadline:10
+Apr 02, 2018 3:41:49 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 3:41:49 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:00:57 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:00:57 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:00:57 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:00:57 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:01:25 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:01:26 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:01:26 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:01:26 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:01:41 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:01:41 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:01:41 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:01:41 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:01:59 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:01:59 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:01:59 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:01:59 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:23:26 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:23:26 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:23:26 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:23:26 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:24:13 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:24:13 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:24:13 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:24:13 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:26:26 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:26:26 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:26:26 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:26:26 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:26:53 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:26:53 PM Main main
+信息: Deadline:199
+Apr 02, 2018 4:26:53 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1012.0
+Apr 02, 2018 4:26:53 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:28:16 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:28:16 PM Main main
+信息: Deadline:10
+Apr 02, 2018 4:28:16 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:25392.0
+Apr 02, 2018 4:28:16 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:28:29 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:28:29 PM Main main
+信息: Deadline:1999
+Apr 02, 2018 4:29:17 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:29:17 PM Main main
+信息: Deadline:199
+Apr 02, 2018 4:29:17 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:1012.0
+Apr 02, 2018 4:29:17 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:29:31 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:29:31 PM Main main
+信息: Deadline:275
+Apr 02, 2018 4:29:31 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:383.0
+Apr 02, 2018 4:29:31 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 4:29:41 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 4:29:41 PM Main main
+信息: Deadline:355
+Apr 02, 2018 4:29:41 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:463.0
+Apr 02, 2018 4:29:41 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 6:07:26 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:07:26 PM Main main
+信息: Deadline:1999
+Apr 02, 2018 6:08:18 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:08:18 PM Main main
+信息: Deadline:1999
+Apr 02, 2018 6:09:08 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:09:08 PM Main main
+信息: Deadline:1999
+Apr 02, 2018 6:09:08 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:NaN
+Apr 02, 2018 6:09:08 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 6:09:58 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:09:58 PM Main main
+信息: Deadline:1999
+Apr 02, 2018 6:09:58 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:130.70535267633818
+Apr 02, 2018 6:09:58 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 6:14:34 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:14:34 PM Main main
+信息: Deadline:10
+Apr 02, 2018 6:14:35 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:26128.0
+Apr 02, 2018 6:14:35 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 6:16:20 PM Generator.Main main
+信息: workload range: 40
+Apr 02, 2018 6:16:28 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 6:16:28 PM Main main
+信息: Deadline:10
+Apr 02, 2018 6:16:28 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 6:16:28 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:05:26 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:05:26 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:05:26 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:05:26 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:27:35 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:27:35 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:27:36 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:27:36 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:29:42 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:29:42 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:29:42 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:29:42 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:33:24 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:33:24 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:33:24 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:33:25 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:34:33 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:34:33 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:34:34 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:34:34 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:34:49 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:34:49 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:34:49 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:34:49 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:36:05 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:36:05 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:36:05 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:37:14 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:37:14 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:37:14 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:37:14 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:40:36 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:40:36 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:40:37 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:40:37 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:43:41 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:43:41 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:43:41 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:43:41 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:48:43 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:48:43 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:48:44 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:48:44 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 10:55:22 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 10:55:22 PM Main main
+信息: Deadline:10
+Apr 02, 2018 10:55:22 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 10:55:22 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 11:20:23 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:20:23 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:20:23 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:43428.2
+Apr 02, 2018 11:20:23 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 11:21:06 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:21:06 PM Main main
+信息: Deadline:30
+Apr 02, 2018 11:21:07 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:14476.066666666666
+Apr 02, 2018 11:21:07 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 11:24:16 PM Generator.Main main
+信息: workload range: 40
+Apr 02, 2018 11:24:23 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:24:23 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:24:23 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:29920.9
+Apr 02, 2018 11:24:44 PM Generator.Main main
+信息: workload range: 40
+Apr 02, 2018 11:24:51 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:24:51 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:24:51 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:39438.399999999994
+Apr 02, 2018 11:25:45 PM Generator.Main main
+信息: workload range: 40
+Apr 02, 2018 11:25:51 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:25:51 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:25:51 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:41990.4
+Apr 02, 2018 11:26:50 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:26:50 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:26:50 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:41990.4
+Apr 02, 2018 11:26:50 PM DVS_NEW Execute
+信息: DVS Energy Consumption: 26255.574217094498
+Apr 02, 2018 11:26:50 PM Main main
+信息: <---------- program end ---------->
+Apr 02, 2018 11:32:10 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:32:10 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:32:10 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:41990.4
+Apr 02, 2018 11:37:51 PM Generator.Main main
+信息: workload range: 40
+Apr 02, 2018 11:38:11 PM Main main
+信息: <-------- program start ---------->
+Apr 02, 2018 11:38:11 PM Main main
+信息: Deadline:10
+Apr 02, 2018 11:38:11 PM JohnsonsRule Execute
+信息: Johonsons Energy Consumption:40068.00000000001
+Apr 02, 2018 11:38:11 PM Main main
+信息: <---------- program end ---------->

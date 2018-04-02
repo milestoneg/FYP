@@ -10,26 +10,28 @@ import java.util.regex.Pattern;
 
 import com.google.gson.Gson;
 
-public class DVS_NEW {
+public class DVS_Interleaved {
 
 	String path = "Jobs.txt";// indicate file path
 	int deadline = 0;
 	Logger logger;
-	LinkedList<Job> machine_1_JobList = new LinkedList<>();
-	LinkedList<Job> machine_2_JobList = new LinkedList<>();
-
-	public DVS_NEW(int ddl, Logger logger) {
+//	LinkedList<Job> machine_1_JobList = new LinkedList<>();
+//	LinkedList<Job> machine_2_JobList = new LinkedList<>();
+	LinkedList<Job> J12_J1 = new LinkedList<>();
+	LinkedList<Job> J21_J2 = new LinkedList<>();
+	
+	public DVS_Interleaved(int ddl, Logger logger) {
 		deadline = ddl;
 		this.logger = logger;
 	}
 
-	public LinkedList<Job> getMachine_1_JobList() {
-		return machine_1_JobList;
-	}
-
-	public LinkedList<Job> getMachine_2_JobList() {
-		return machine_2_JobList;
-	}
+//	public LinkedList<Job> getMachine_1_JobList() {
+//		return machine_1_JobList;
+//	}
+//
+//	public LinkedList<Job> getMachine_2_JobList() {
+//		return machine_2_JobList;
+//	}
 
 	public void Execute() throws IOException {
 
@@ -64,16 +66,52 @@ public class DVS_NEW {
 			}
 		}
 		
+		// manipulate jobs
+		LinkedList<Job> J12_M1 = new LinkedList<>();
+		LinkedList<Job> J21_M2 = new LinkedList<>();
+		LinkedList<Job> J12_M2 = new LinkedList<>();
+		LinkedList<Job> J21_M1 = new LinkedList<>();
+		for(Job job : J12) {
+			Job newjob_M1 = job.Copy();
+			Job newjob_M2 = job.Copy();
+			newjob_M1.getWorkLoadList().get(1).setProcessingTime(0);
+			newjob_M2.getWorkLoadList().get(0).setProcessingTime(0);
+			J12_M1.add(newjob_M1);
+			J12_M2.add(newjob_M2);
+		}
+		for(Job job:J1) {
+			J12_M1.add(job);
+		}
+		for(Job job : J21) {
+			Job newjob_M1 = job.Copy();
+			Job newjob_M2 = job.Copy();
+			newjob_M2.getWorkLoadList().get(1).setProcessingTime(0);
+			newjob_M1.getWorkLoadList().get(0).setProcessingTime(0);
+			J21_M1.add(newjob_M1);
+			J21_M2.add(newjob_M2);
+		}
+		for(Job job : J2) {
+			J21_M2.add(job);
+		}
+		
 		
 		// control code
-		long starttime = System.currentTimeMillis();
-		double J12_EnergyConsumption_origin = DVS(J12);
-		// double J21_EnergyConsumption = DVS(J21)/deadline;
-		double final_result = Math.pow(J12.get(0).getWorkLoadList().get(0).getProcessingTime()+J12_EnergyConsumption_origin+J12.get(J12.size()-1).getWorkLoadList().get(1).getProcessingTime(), 2)/deadline;
+		long starttime = System.currentTimeMillis();	
+		double DVS_J12 = DVS(J12_M1);
+		double DVS_J21 = DVS(J21_M2);
+		double DVS_J12M2 = DVS(J12_M2);
+		double DVS_J21M1 = DVS(J21_M1);
+		double a = DVS_J21M1+DVS_J12M2-DVS_J12-DVS_J21;
+		double b = 2*deadline*DVS_J12+2*deadline*DVS_J21;
+		double c = -(DVS_J12*deadline*deadline)-(DVS_J21*deadline*deadline);
+		double time = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		double time2 = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		double final_result = (Math.pow(J12_M1.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J12+J12_M1.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time)+(Math.pow(J21_M2.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J21+J21_M2.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time)+(Math.pow(J12_M2.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J12M2+J12_M2.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time))+(Math.pow(J21_M1.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J21M1+J21_M1.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time));
+		System.out.println("time:" +time +" time2:"+ time2);
 		System.out.println("DVS Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
-		System.out.print("Execute time: " + (endtime - starttime) + " ms");
-		logger.info("DVS Energy Consumption: " + final_result);
+		//System.out.print("Execute time: " + (endtime - starttime) + " ms");
+		//logger.info("DVS Energy Consumption: " + final_result);
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
@@ -114,8 +152,10 @@ public class DVS_NEW {
 		
 		
 		
-		if (J.isEmpty() || J.size() == 1) {
+		if (J.isEmpty() ) {
 			return 0; // may has problem
+		}else if(J.size() == 1) {
+			return Math.sqrt(Math.pow(J.get(0).getWorkLoadList().get(0).getProcessingTime(), 2) + Math.pow(J.get(0).getWorkLoadList().get(1).getProcessingTime(), 2));
 		}
 		for (int index = 1; index < J.size(); index++) {
 			boolean flag = true;

@@ -56,11 +56,17 @@ public class JobGenerator {
 				int ProcessingTime = random.nextInt(WorkloadUpperBound - WorkloadLowerBound) + WorkloadLowerBound;
 				WorkLoad workLoad = new WorkLoad(1, ProcessingTime);
 				job.addWorkLoad(workLoad);
+				
+				WorkLoad workLoad_2 = new WorkLoad(2, 0);
+				job.addWorkLoad(workLoad_2);
 				OnlyM1_Count++;
 			} else if (OnlyM2_Count < OnlyM2) {
 				int ProcessingTime = random.nextInt(WorkloadUpperBound - WorkloadLowerBound) + WorkloadLowerBound;
 				WorkLoad workLoad = new WorkLoad(2, ProcessingTime);
 				job.addWorkLoad(workLoad);
+				
+				WorkLoad workLoad_2 = new WorkLoad(1, 0);
+				job.addWorkLoad(workLoad_2);
 				OnlyM2_Count++;
 			} else if (M1first_Count < M1first) {
 
