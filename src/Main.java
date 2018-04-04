@@ -45,13 +45,16 @@ public class Main {
 		logger.info("Deadline:" + ddl);
 		JohnsonsRule johnsonsRule = new JohnsonsRule(ddl, logger);
 		johnsonsRule.Execute();
+		
+		JohnsonsRule_withSpeedScaling johnsonsRule_withSpeedScaling = new JohnsonsRule_withSpeedScaling(ddl, logger);
+		johnsonsRule_withSpeedScaling.Execute();
 //		DVS_NEW DVS = new DVS_NEW(ddl, logger);
 //		DVS.Execute();
-		
-		
+//		
+//		
 		DVS_differentOrder DVS_differentOrder = new DVS_differentOrder(ddl, logger);
 		DVS_differentOrder.Execute();
-		
+//		
 		DVS_Interleaved dvs_Interleaved = new DVS_Interleaved(ddl, logger);
 		dvs_Interleaved.Execute();
 		logger.info("<---------- program end ---------->");
