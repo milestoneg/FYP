@@ -257,7 +257,7 @@ public class JohnsonsRule {
 			
 			
 		} else if (workload_J12_J1==0 && !J2.isEmpty()) {
-			if(workload_J2<workload_J21) {
+			if(workload_J2<workload_J21_M1) {
 				EnergyCons = Math.pow((workload_J21 + workload_J21_M1)/deadline, 2)*deadline+Math.pow((workload_J21 + workload_J21_M1)/deadline, 2)*(workload_J2/((workload_J21 + workload_J21_M1)/deadline));
 
 			}else {
@@ -267,16 +267,16 @@ public class JohnsonsRule {
 		} else {
 			if(workload_J12_J1>workload_J21_J2) {
 				if(workload_J12_M2>workload_J21_M1) {
-					EnergyCons = Math.pow((workload_J12_J1+workload_J12_M2)/deadline , 2)*deadline + Math.pow((workload_J12_J1+workload_J12_M2)/deadline , 2)*((workload_J21_J2+workload_J21_M1)/((workload_J12_J1+workload_J12_M2)/deadline)) ;
+					EnergyCons = Math.pow((workload_J12_J1+workload_J12_M2)/deadline , 2)*deadline + Math.pow((workload_J12_J1+workload_J12_M2)/deadline , 2)*((workload_J21_J2)/((workload_J12_J1+workload_J12_M2)/deadline))+ Math.pow((workload_J12_J1+workload_J12_M2)/deadline , 2)*((workload_J21_M1)/((workload_J12_J1+workload_J12_M2)/deadline))  ;
 				}else {
-					EnergyCons = Math.pow((workload_J12_J1+workload_J21_M1)/deadline , 2)*deadline + Math.pow((workload_J12_J1+workload_J21_M1)/deadline , 2)*((workload_J21_J2+workload_J12_M2)/((workload_J12_J1+workload_J21_M1)/deadline)) ;
+					EnergyCons = Math.pow((workload_J12_J1+workload_J21_M1)/deadline , 2)*deadline + Math.pow((workload_J12_J1+workload_J21_M1)/deadline , 2)*((workload_J21_J2)/((workload_J12_J1+workload_J21_M1)/deadline)) + Math.pow((workload_J12_J1+workload_J21_M1)/deadline , 2)*((workload_J12_M2)/((workload_J12_J1+workload_J21_M1)/deadline)) ;
 				}
 			}else {
 				if(workload_J12_M2>workload_J21_M1) {
-					EnergyCons = Math.pow((workload_J21_J2+workload_J12_M2)/deadline , 2)*deadline + Math.pow((workload_J21_J2+workload_J12_M2)/deadline , 2)*((workload_J12_J1+workload_J21_M1)/((workload_J21_J2+workload_J12_M2)/deadline)) ;
+					EnergyCons = Math.pow((workload_J21_J2+workload_J12_M2)/deadline , 2)*deadline + Math.pow((workload_J21_J2+workload_J12_M2)/deadline , 2)*((workload_J12_J1)/((workload_J21_J2+workload_J12_M2)/deadline))+ Math.pow((workload_J21_J2+workload_J12_M2)/deadline , 2)*((workload_J21_M1)/((workload_J21_J2+workload_J12_M2)/deadline)) ;
 
 				}else {
-					EnergyCons = Math.pow((workload_J21_J2+workload_J21_M1)/deadline , 2)*deadline + Math.pow((workload_J21_J2+workload_J21_M1)/deadline , 2)*((workload_J12_J1+workload_J12_M2)/((workload_J21_J2+workload_J21_M1)/deadline)) ;
+					EnergyCons = Math.pow((workload_J21_J2+workload_J21_M1)/deadline , 2)*deadline + Math.pow((workload_J21_J2+workload_J21_M1)/deadline , 2)*((workload_J12_J1)/((workload_J21_J2+workload_J21_M1)/deadline))+ Math.pow((workload_J21_J2+workload_J21_M1)/deadline , 2)*((workload_J12_M2)/((workload_J21_J2+workload_J21_M1)/deadline))  ;
 
 				}
 			}

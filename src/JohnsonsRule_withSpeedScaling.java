@@ -86,8 +86,8 @@ public class JohnsonsRule_withSpeedScaling {
 
 		// print energy consumption
 		double Energy = EnergyConsumption();
-		System.out.println("Johnsons Energy Consumption:" + Energy);
-		logger.info("Johonsons Energy Consumption:" + Energy);
+		System.out.println("Johnsons_speedScaling Energy Consumption:" + Energy);
+		logger.info("Johonsons_speedScaling Energy Consumption:" + Energy);
 		// print out the result
 		// for(Job job : Machine_1_JobList) {
 		// System.out.println("id"+job.getId());

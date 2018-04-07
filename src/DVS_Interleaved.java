@@ -107,11 +107,11 @@ public class DVS_Interleaved {
 		double time = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
 		double time2 = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
 		double final_result = (Math.pow(J12_M1.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J12+J12_M1.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time)+(Math.pow(J21_M2.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J21+J21_M2.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time)+(Math.pow(J12_M2.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J12M2+J12_M2.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time))+(Math.pow(J21_M1.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_J21M1+J21_M1.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time));
-		System.out.println("time:" +time +" time2:"+ time2);
-		System.out.println("DVS Energy Consumption:" + final_result);
+		//System.out.println("time:" +time +" time2:"+ time2);
+		System.out.println("DVS_interleaved Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
 		//System.out.print("Execute time: " + (endtime - starttime) + " ms");
-		//logger.info("DVS Energy Consumption: " + final_result);
+		logger.info("DVS_interleaved Energy Consumption: " + final_result);
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {

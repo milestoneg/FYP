@@ -17,6 +17,8 @@ public class DVS_differentOrder {
 	Logger logger;
 	LinkedList<Job> machine_1_JobList = new LinkedList<>();
 	LinkedList<Job> machine_2_JobList = new LinkedList<>();
+	LinkedList<Job> J12_J1 = new LinkedList<>();
+	LinkedList<Job> J21_J2 = new LinkedList<>();
 
 	public DVS_differentOrder(int ddl, Logger logger) {
 		deadline = ddl;
@@ -55,35 +57,35 @@ public class DVS_differentOrder {
 			int secondMachine_load = job.getWorkLoadList().get(1).getProcessingTime();
 			if (firstMachine == 1 && secondMachine_load!=0) {
 				J12.add(job);
-				machine_1_JobList.add(job);
+				J12_J1.add(job);
 			} else if (firstMachine == 2 && secondMachine_load != 0) {
 				J21.add(job);
-				machine_2_JobList.add(job);
+				J21_J2.add(job);
 			} else if (firstMachine == 1 && secondMachine_load == 0) {
 				J1.add(job);
-				machine_1_JobList.add(job);
+				J12_J1.add(job);
 			} else {
 				J2.add(job);
-				machine_2_JobList.add(job);
+				J21_J2.add(job);
 			}
 		}
 
 		
 		// control code
 		long starttime = System.currentTimeMillis();	
-		double DVS_M1 = DVS(machine_1_JobList);
-		double DVS_M2 = DVS(machine_2_JobList);
+		double DVS_M1 = DVS(J12_J1);
+		double DVS_M2 = DVS(J21_J2);
 		double a = DVS_M1-DVS_M2;
 		double b = 2*deadline*DVS_M2;
 		double c = -DVS_M2*deadline*deadline;
 		double time = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
 		double time2 = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
-		double final_result = (Math.pow(machine_1_JobList.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M1+machine_1_JobList.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time))+(Math.pow(machine_2_JobList.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M2+machine_2_JobList.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time);
-		System.out.println("time:" +time +" time2:"+ time2);
-		System.out.println("DVS Energy Consumption:" + final_result);
+		double final_result = (Math.pow(J12_J1.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M1+J12_J1.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/(deadline-time))+(Math.pow(J21_J2.getFirst().getWorkLoadList().get(0).getProcessingTime()+DVS_M2+J21_J2.getLast().getWorkLoadList().get(1).getProcessingTime(), 2)/time);
+		//System.out.println("time:" +time +" time2:"+ time2);
+		System.out.println("DVS_differentOrdered Energy Consumption:" + final_result);
 		long endtime = System.currentTimeMillis();
 		//System.out.print("Execute time: " + (endtime - starttime) + " ms");
-		//logger.info("DVS Energy Consumption: " + final_result);
+		logger.info("DVS_differentOrdered Energy Consumption: " + final_result);
 	}
 
 	public LinkedList<Job> ExtractData() throws IOException {
