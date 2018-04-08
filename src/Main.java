@@ -18,11 +18,11 @@ public class Main {
 		Scanner intkb = new Scanner(System.in);
 
 		// code used to read keyboard input
-		System.out.println("Please input the deadline(ms):");
-		int ddl = intkb.nextInt();
+//		System.out.println("Please input the deadline(ms):");
+//		int ddl = intkb.nextInt();
 
 		// code used to read parameters from command line
-		// int ddl = Integer.valueOf(args[0]);
+		 int ddl = Integer.valueOf(args[0]);
 
 		// JohnsonsRule JohnsonsRule = new JohnsonsRule();
 		// JohnsonsRule.Execute();

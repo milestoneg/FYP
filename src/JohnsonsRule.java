@@ -242,12 +242,12 @@ public class JohnsonsRule {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		System.out.println("-----------------");
-		System.out.println(workload_J12_J1);
-		System.out.println(workload_J21_J2);
-		System.out.println(totalWork_M1);
-		System.out.println(totalWork_M2);
-		System.out.println("-----------------");
+//		System.out.println("-----------------");
+//		System.out.println(workload_J12_J1);
+//		System.out.println(workload_J21_J2);
+//		System.out.println(totalWork_M1);
+//		System.out.println(totalWork_M2);
+//		System.out.println("-----------------");
 		if (workload_J21_J2 == 0 && !J1.isEmpty()) {
 			if(workload_J1<workload_J12_M2) {
 				EnergyCons = Math.pow((workload_J12 + workload_J12_M2)/deadline, 2)*deadline+Math.pow((workload_J12 + workload_J12_M2)/deadline, 2)*(workload_J1/((workload_J12 + workload_J12_M2)/deadline));

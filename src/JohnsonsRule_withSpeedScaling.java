@@ -88,15 +88,6 @@ public class JohnsonsRule_withSpeedScaling {
 		double Energy = EnergyConsumption();
 		System.out.println("Johnsons_speedScaling Energy Consumption:" + Energy);
 		logger.info("Johonsons_speedScaling Energy Consumption:" + Energy);
-		// print out the result
-		// for(Job job : Machine_1_JobList) {
-		// System.out.println("id"+job.getId());
-		// }
-		// System.out.println("------------------------------------");
-		// //sorted job list content
-		// for(Job job : Machine_2_JobList) {
-		// System.out.println("id" + job.getId());
-		// }
 	}
 
 	public LinkedList<Job> getMachine_1_JobList() {
@@ -140,12 +131,6 @@ public class JohnsonsRule_withSpeedScaling {
 
 	public Job[] JohnsonAlogrithm(LinkedList<Job> J) {
 		LinkedList<Job> Job_temp = new LinkedList<>(J);
-
-		// for (Job job : Job_temp) {
-		// System.out.println("id" + job.getId() + "workload:" +
-		// job.getWorkLoadList().get(0).getProcessingTime()
-		// + "||" + job.getWorkLoadList().get(1).getProcessingTime());
-		// }
 
 		Job[] ordered_Jobs = new Job[Job_temp.size()];
 		int LeftPointer = 0;
@@ -243,17 +228,19 @@ public class JohnsonsRule_withSpeedScaling {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		System.out.println("-----------------");
-		System.out.println(workload_J12_J1);
-		System.out.println(workload_J21_J2);
-		System.out.println(workload_J12_M2);
-		System.out.println(totalWork_M1);
-		System.out.println(totalWork_M2);
-		System.out.println("-----------------");
+//		System.out.println("-----------------");
+//		System.out.println(workload_J12_J1);
+//		System.out.println(workload_J21_J2);
+//		System.out.println(workload_J12_M2);
+//		System.out.println(totalWork_M1);
+//		System.out.println(totalWork_M2);
+//		System.out.println("-----------------");
 		if (workload_J21_J2 == 0 && !J1.isEmpty()) {
 			if (workload_J1 < workload_J12_M2) {
-				double random_time = 5;
-				double c = 1E-4;
+				double factor = 0.25;
+				double clip = factor * deadline;
+				double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+				double c = 1E-6;
 				int decreaseCount = 1;
 				while (random_time == 0.0) {
 					random_time = new Random().nextDouble() * deadline;
@@ -261,9 +248,9 @@ public class JohnsonsRule_withSpeedScaling {
 				double time = random_time - c * ((-Math.pow(workload_J12, 2) / Math.pow(random_time, 2))
 						+ (Math.pow(workload_J12_M2, 2)) / Math.pow(deadline - random_time, 2));
 
-				while (decreaseCount < 50) {
+				while (decreaseCount < 300) {
 					time = gradientDescent(time, random_time, c, workload_J12, workload_J12_M2);
-					c = c * (1 / decreaseCount);
+					c = c * Math.pow(0.99,decreaseCount/20 );
 					decreaseCount++;
 
 				}
@@ -272,8 +259,10 @@ public class JohnsonsRule_withSpeedScaling {
 						+ Math.pow((workload_J12_M2) / (deadline - time), 2) * (deadline - time)
 						+ Math.pow((workload_J1) / (deadline - time), 2) * (deadline - time);
 			} else {
-				double random_time = 5;
-				double c = 1E-4;
+				double factor = 0.25;
+				double clip = factor * deadline;
+				double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+				double c = 1E-6;
 				int decreaseCount = 1;
 				while (random_time == 0.0) {
 					random_time = new Random().nextDouble() * deadline;
@@ -281,9 +270,9 @@ public class JohnsonsRule_withSpeedScaling {
 				double time = random_time - c * ((-Math.pow(workload_J12, 2) / Math.pow(random_time, 2))
 						+ (Math.pow(workload_J1, 2)) / Math.pow(deadline - random_time, 2));
 
-				while (decreaseCount < 50) {
+				while (decreaseCount < 300) {
 					time = gradientDescent(time, random_time, c, workload_J12, workload_J1);
-					c = c * (1 / decreaseCount);
+					c = c * Math.pow(0.99,decreaseCount/20 );
 					decreaseCount++;
 
 				}
@@ -295,8 +284,10 @@ public class JohnsonsRule_withSpeedScaling {
 
 		} else if (workload_J12_J1 == 0 && !J2.isEmpty()) {
 			if (workload_J2 < workload_J21_M1) {
-				double random_time = 5;
-				double c = 1E-4;
+				double factor = 0.25;
+				double clip = factor * deadline;
+				double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+				double c = 1E-6;
 				int decreaseCount = 1;
 				while (random_time == 0.0) {
 					random_time = new Random().nextDouble() * deadline;
@@ -304,9 +295,9 @@ public class JohnsonsRule_withSpeedScaling {
 				double time = random_time - c * ((-Math.pow(workload_J21, 2) / Math.pow(random_time, 2))
 						+ (Math.pow(workload_J21_M1, 2)) / Math.pow(deadline - random_time, 2));
 
-				while (decreaseCount < 50) {
+				while (decreaseCount < 300) {
 					time = gradientDescent(time, random_time, c, workload_J21, workload_J21_M1);
-					c = c * (1 / decreaseCount);
+					c = c * Math.pow(0.99,decreaseCount/20 );
 					decreaseCount++;
 
 				}
@@ -316,8 +307,10 @@ public class JohnsonsRule_withSpeedScaling {
 						+ Math.pow((workload_J2) / (deadline - time), 2) * (deadline - time);
 
 			} else {
-				double random_time = 5;
-				double c = 1E-4;
+				double factor = 0.25;
+				double clip = factor * deadline;
+				double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+				double c = 1E-6;
 				int decreaseCount = 1;
 				while (random_time == 0.0) {
 					random_time = new Random().nextDouble() * deadline;
@@ -325,9 +318,9 @@ public class JohnsonsRule_withSpeedScaling {
 				double time = random_time - c * ((-Math.pow(workload_J21, 2) / Math.pow(random_time, 2))
 						+ (Math.pow(workload_J2, 2)) / Math.pow(deadline - random_time, 2));
 
-				while (decreaseCount < 50) {
+				while (decreaseCount < 300) {
 					time = gradientDescent(time, random_time, c, workload_J21, workload_J2);
-					c = c * (1 / decreaseCount);
+					c = c * Math.pow(0.99,decreaseCount/20 );
 					decreaseCount++;
 
 				}
@@ -340,29 +333,35 @@ public class JohnsonsRule_withSpeedScaling {
 		} else {
 			if (workload_J12_J1 > workload_J21_J2) {
 				if (workload_J12_M2 > workload_J21_M1) {
-					double random_time = 5;
-					double c = 1E-4;
+					double factor = 0.25;
+					double clip = factor * deadline;
+					double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+					double c = 1E-6;
 					int decreaseCount = 1;
 					while (random_time == 0.0) {
 						random_time = new Random().nextDouble() * deadline;
 					}
 					double time = random_time - c * ((-Math.pow(workload_J12_J1, 2) / Math.pow(random_time, 2))
 							+ (Math.pow(workload_J12_M2, 2)) / Math.pow(deadline - random_time, 2));
-
-					while (decreaseCount < 50) {
+					
+					while (decreaseCount < 300) {
 						time = gradientDescent(time, random_time, c, workload_J12_J1, workload_J12_M2);
-						c = c * (1 / decreaseCount);
+						//System.out.println(energy);
+						c = c * Math.pow(0.99,decreaseCount/20 );
 						decreaseCount++;
-
 					}
-
+					//System.out.println("random" + random_time);
+					//System.out.println(time);
 					EnergyCons = Math.pow((workload_J12_J1) / time, 2) * time
 							+ Math.pow((workload_J21_J2) / time, 2) * time
 							+ Math.pow((workload_J12_M2) / (deadline - time), 2) * (deadline - time)
 							+ Math.pow((workload_J21_M1) / (deadline - time), 2) * (deadline - time);
 				} else {
-					double random_time = 5;
-					double c = 1E-4;
+					
+					double factor = 0.25;
+					double clip = factor * deadline;
+					double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+					double c = 1E-6;
 					int decreaseCount = 1;
 					while (random_time == 0.0) {
 						random_time = new Random().nextDouble() * deadline;
@@ -370,9 +369,9 @@ public class JohnsonsRule_withSpeedScaling {
 					double time = random_time - c * ((-Math.pow(workload_J12_J1, 2) / Math.pow(random_time, 2))
 							+ (Math.pow(workload_J21_M1, 2)) / Math.pow(deadline - random_time, 2));
 
-					while (decreaseCount < 50) {
+					while (decreaseCount < 300) {
 						time = gradientDescent(time, random_time, c, workload_J12_J1, workload_J21_M1);
-						c = c * (1 / decreaseCount);
+						c = c * Math.pow(0.99,decreaseCount/20 );
 						decreaseCount++;
 
 					}
@@ -385,8 +384,11 @@ public class JohnsonsRule_withSpeedScaling {
 			} else {
 				if (workload_J12_M2 > workload_J21_M1) {
 					// double random_time = new Random().nextDouble()*deadline;
-					double random_time = 5;
-					double c = 1E-4;
+					
+					double factor = 0.25;
+					double clip = factor * deadline;
+					double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+					double c = 1E-6;
 					int decreaseCount = 1;
 					while (random_time == 0.0) {
 						random_time = new Random().nextDouble() * deadline;
@@ -394,9 +396,9 @@ public class JohnsonsRule_withSpeedScaling {
 					double time = random_time - c * ((-Math.pow(workload_J21_J2, 2) / Math.pow(random_time, 2))
 							+ (Math.pow(workload_J12_M2, 2)) / Math.pow(deadline - random_time, 2));
 
-					while (decreaseCount < 50) {
+					while (decreaseCount < 300) {
 						time = gradientDescent(time, random_time, c, workload_J21_J2, workload_J12_M2);
-						c = c * (1 / decreaseCount);
+						c = c * Math.pow(0.99,decreaseCount/20 );
 						decreaseCount++;
 
 					}
@@ -407,8 +409,10 @@ public class JohnsonsRule_withSpeedScaling {
 							+ Math.pow((workload_J21_M1) / (deadline - time), 2) * (deadline - time);
 
 				} else {
-					double random_time = 5;
-					double c = 1E-4;
+					double factor = 0.25;
+					double clip = factor * deadline;
+					double random_time = new Random().nextDouble()*(deadline-2*clip)+clip;
+					double c = 1E-6;
 					int decreaseCount = 1;
 					while (random_time == 0.0) {
 						random_time = new Random().nextDouble() * deadline;
@@ -416,9 +420,9 @@ public class JohnsonsRule_withSpeedScaling {
 					double time = random_time - c * ((-Math.pow(workload_J21_J2, 2) / Math.pow(random_time, 2))
 							+ (Math.pow(workload_J21_M1, 2)) / Math.pow(deadline - random_time, 2));
 
-					while (decreaseCount < 50) {
+					while (decreaseCount < 300) {
 						time = gradientDescent(time, random_time, c, workload_J21_J2, workload_J21_M1);
-						c = c * (1 / decreaseCount);
+						c = c * Math.pow(0.99,decreaseCount/20 );
 						decreaseCount++;
 
 					}
